@@ -1,543 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-07-25T13:53:20.629417" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-07-25T14:48:20.456305" rpa="false" schemaversion="5">
 <suite id="s1" name="KB-Admin-Alt" source="c:\Users\tobias\projects\robotTestingAlt\KB-Admin-Alt.robot">
-<test id="s1-t1" name="Založení nového klienta (KB ADMIN)" line="140">
-<kw name="Otevři KB Admin">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:21.014096" level="INFO">Opening browser 'chrome' to base url 'https://dev1-caas.kb.cz/'.</msg>
-<arg>https://dev1-caas.kb.cz/</arg>
-<arg>${prohlížeč}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-07-25T13:53:21.013098" elapsed="1.860563"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-07-25T13:53:22.873661" elapsed="0.028538"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:22.904294" level="INFO">Clicking element 'id:details-button'.</msg>
-<arg>id:details-button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:22.903263" elapsed="0.062141"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:22.965404" level="INFO">Clicking element 'id:proceed-link'.</msg>
-<arg>id:proceed-link</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:22.965404" elapsed="0.441578"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:details-button</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:53:23.407969" elapsed="0.247038"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:23.655007" level="INFO">Clicking element 'id:details-button'.</msg>
-<arg>id:details-button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:23.655007" elapsed="0.036248"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:23.691255" level="INFO">Clicking element 'id:proceed-link'.</msg>
-<arg>id:proceed-link</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:23.691255" elapsed="0.745669"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:details-button</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:53:24.436924" elapsed="4.159431"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:28.596355" level="INFO">Clicking element 'id:details-button'.</msg>
-<arg>id:details-button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:28.596355" elapsed="0.040576"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:28.637442" level="INFO">Clicking element 'id:proceed-link'.</msg>
-<arg>id:proceed-link</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:28.636931" elapsed="0.270940"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:userNameInput</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:53:28.907871" elapsed="0.024933"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:28.933803" level="INFO">Typing text 'DSLAB\e_mvysko' into text field 'id:userNameInput'.</msg>
-<arg>id:userNameInput</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:28.932804" elapsed="0.072417"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:29.006218" level="INFO">Clicking element 'id:nextButton'.</msg>
-<arg>id:nextButton</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:29.006218" elapsed="0.033828"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:29.040162" level="INFO">Typing text 'Pr0ject_NemlaZ_0002' into text field 'id:passwordInput'.</msg>
-<arg>id:passwordInput</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:29.040162" elapsed="0.046546"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:29.086708" level="INFO">Clicking element 'id:submitButton'.</msg>
-<arg>id:submitButton</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:29.086708" elapsed="0.903481"/>
-</kw>
-<arg>${browser}</arg>
-<status status="PASS" start="2024-07-25T13:53:21.012101" elapsed="8.978088"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:query</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:53:29.991187" elapsed="1.773608"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:31.765793" level="INFO">Typing text '.' into text field 'id:query'.</msg>
-<arg>id:query</arg>
-<arg>.</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:31.765793" elapsed="0.054860"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:31.821650" level="INFO">Clicking button 'class:btn.btn-primary.btn-icon'.</msg>
-<arg>class:btn.btn-primary.btn-icon</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:31.821650" elapsed="0.052971"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>name:bu9680</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:53:31.874621" elapsed="0.228471"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:32.104333" level="INFO">Clicking element 'name:bu9680'.</msg>
-<arg>name:bu9680</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:32.104333" elapsed="0.035969"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath: //*[contains(text(), "Zvolte")]</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:53:32.140302" elapsed="0.227836"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:32.368138" level="INFO">Clicking element 'xpath: //*[contains(text(), "Zvolte")]'.</msg>
-<arg>xpath: //*[contains(text(), "Zvolte")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:32.368138" elapsed="0.068265"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:32.437401" level="INFO">Clicking element 'xpath: //*[contains(text(), "ČR (0100)")]'.</msg>
-<arg>xpath: //*[contains(text(), "ČR (0100)")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:32.436403" elapsed="0.049881"/>
-</kw>
-<kw name="Generate Random String" owner="String">
-<msg time="2024-07-25T13:53:32.487282" level="INFO">${client-ID} = 2492856974</msg>
-<var>${client-ID}</var>
-<arg>10</arg>
-<arg>123456789</arg>
-<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<status status="PASS" start="2024-07-25T13:53:32.487282" elapsed="0.000996"/>
-</kw>
-<kw name="Set Global Variable" owner="BuiltIn">
-<msg time="2024-07-25T13:53:32.488278" level="INFO">${client-ID} = 2492856974</msg>
-<arg>${client-ID}</arg>
-<doc>Makes a variable available globally in all tests and suites.</doc>
-<status status="PASS" start="2024-07-25T13:53:32.488278" elapsed="0.000000"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:32.489275" level="INFO">Typing text '2492856974' into text field 'id:bu10372'.</msg>
-<arg>id:bu10372</arg>
-<arg>${client-ID}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:32.489275" elapsed="0.080960"/>
-</kw>
-<kw name="Generate Random String" owner="String">
-<msg time="2024-07-25T13:53:32.571494" level="INFO">${client-name} = TřřTCAG</msg>
-<var>${client-name}</var>
-<arg>7</arg>
-<arg>ABCDEFGHIJKLMNOPQRŘSŠTŤUVWXYZabcdefghijklmnopqrřsštťuvwxyz</arg>
-<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<status status="PASS" start="2024-07-25T13:53:32.570235" elapsed="0.001259"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:32.572476" level="INFO">Typing text 'TřřTCAG' into text field 'id:bu0306'.</msg>
-<arg>id:bu0306</arg>
-<arg>${client-name}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:32.571494" elapsed="0.072909"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:32.645402" level="INFO">Typing text 'TřřTCAG' into text field 'id:bu9698'.</msg>
-<arg>id:bu9698</arg>
-<arg>${client-name}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:32.645402" elapsed="0.072435"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:32.718834" level="INFO">Typing text '8.6.2000' into text field 'id:bu0985'.</msg>
-<arg>id:bu0985</arg>
-<arg>8.6.2000</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:32.718834" elapsed="0.084334"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:32.804165" level="INFO">Clicking element 'xpath=(//div[contains(@class, 'form-select__container')])[4]'.</msg>
-<arg>xpath=(//div[contains(@class, 'form-select__container')])[4]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:32.804165" elapsed="0.051852"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:32.857013" level="INFO">Clicking element 'xpath: //*[contains(text(), "Muž")]'.</msg>
-<arg>xpath: //*[contains(text(), "Muž")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:32.857013" elapsed="0.052662"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:32.909675" level="INFO">Clicking element 'xpath=(//div[contains(@class, 'form-select__container')])[5]'.</msg>
-<arg>xpath=(//div[contains(@class, 'form-select__container')])[5]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:32.909675" elapsed="0.085561"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:32.996233" level="INFO">Clicking element 'xpath: //*[contains(text(), "Občanský průkaz")]'.</msg>
-<arg>xpath: //*[contains(text(), "Občanský průkaz")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:32.996233" elapsed="0.048280"/>
-</kw>
-<kw name="Generate Random String" owner="String">
-<msg time="2024-07-25T13:53:33.045512" level="INFO">${ID-number} = 033803588901072807834204</msg>
-<var>${ID-number}</var>
-<arg>24</arg>
-<arg>0123456789</arg>
-<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<status status="PASS" start="2024-07-25T13:53:33.045512" elapsed="0.001039"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:33.047508" level="INFO">Typing text '033803588901072807834204' into text field 'id:bu3344'.</msg>
-<arg>id:bu3344</arg>
-<arg>${ID-number}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:33.046551" elapsed="0.097424"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:33.144972" level="INFO">Typing text 'TřřTCAG' into text field 'id:bu10881'.</msg>
-<arg>id:bu10881</arg>
-<arg>${client-name}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:33.144458" elapsed="0.069087"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:33.214544" level="INFO">Typing text '5.5.2008' into text field 'id:bu0314'.</msg>
-<arg>id:bu0314</arg>
-<arg>5.5.2008</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:33.214544" elapsed="0.071999"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:33.287430" level="INFO">Typing text '6.9.2069' into text field 'id:bu10844'.</msg>
-<arg>id:bu10844</arg>
-<arg>6.9.2069</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:33.287430" elapsed="0.070278"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:33.358705" level="INFO">Clicking element 'xpath=(//div[contains(@class, 'form-select__container')])[6]'.</msg>
-<arg>xpath=(//div[contains(@class, 'form-select__container')])[6]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:33.358705" elapsed="0.065492"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:33.425195" level="INFO">Clicking element 'xpath: //*[contains(text(), "Česká republika")]'.</msg>
-<arg>xpath: //*[contains(text(), "Česká republika")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:33.425195" elapsed="0.055132"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:33.482320" level="INFO">Typing text 'TřřTCAG' into text field 'id:bu0032'.</msg>
-<arg>id:bu0032</arg>
-<arg>${client-name}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:33.481323" elapsed="0.069441"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:33.551759" level="INFO">Typing text 'TřřTCAG' into text field 'id:bu0033'.</msg>
-<arg>id:bu0033</arg>
-<arg>${client-name}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:33.550764" elapsed="0.082747"/>
-</kw>
-<kw name="Generate Random String" owner="String">
-<msg time="2024-07-25T13:53:33.634508" level="INFO">${PSČ} = 19072</msg>
-<var>${PSČ}</var>
-<arg>5</arg>
-<arg>0123456789</arg>
-<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<status status="PASS" start="2024-07-25T13:53:33.634508" elapsed="0.000000"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:33.635664" level="INFO">Typing text '19072' into text field 'id:bu9701'.</msg>
-<arg>id:bu9701</arg>
-<arg>${PSČ}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:33.634508" elapsed="0.082575"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:33.717083" level="INFO">Clicking element 'xpath=(//div[contains(@class, 'form-select__container')])[7]'.</msg>
-<arg>xpath=(//div[contains(@class, 'form-select__container')])[7]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:33.717083" elapsed="0.057542"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:33.776621" level="INFO">Clicking element 'xpath=(//*[contains(@class, 'js-select-value')])[426]'.</msg>
-<arg>xpath=(//*[contains(@class, 'js-select-value')])[426]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:33.775622" elapsed="0.050475"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:33.827447" level="INFO">Clicking element 'name:bu9702'.</msg>
-<arg>name:bu9702</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:33.827062" elapsed="0.051658"/>
-</kw>
-<kw name="Close All Browsers" owner="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-07-25T13:53:33.879748" elapsed="6.214884"/>
-</kw>
-<status status="PASS" start="2024-07-25T13:53:21.012101" elapsed="19.084524"/>
-</test>
-<test id="s1-t2" name="Sjednání Smlouvy" line="203">
-<kw name="Sjednej Smlouvu">
-<kw name="Otevři KB Admin">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:40.105960" level="INFO">Opening browser 'chrome' to base url 'https://dev1-caas.kb.cz/'.</msg>
-<arg>https://dev1-caas.kb.cz/</arg>
-<arg>${prohlížeč}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-07-25T13:53:40.104956" elapsed="1.613964"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-07-25T13:53:41.719936" elapsed="0.032322"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:41.753258" level="INFO">Clicking element 'id:details-button'.</msg>
-<arg>id:details-button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:41.753258" elapsed="0.049861"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:41.803119" level="INFO">Clicking element 'id:proceed-link'.</msg>
-<arg>id:proceed-link</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:41.803119" elapsed="0.513166"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:details-button</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:53:42.317282" elapsed="0.268561"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:42.586983" level="INFO">Clicking element 'id:details-button'.</msg>
-<arg>id:details-button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:42.586983" elapsed="0.037901"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:42.626376" level="INFO">Clicking element 'id:proceed-link'.</msg>
-<arg>id:proceed-link</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:42.626376" elapsed="0.782070"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:details-button</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:53:43.408446" elapsed="4.170711"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:47.580153" level="INFO">Clicking element 'id:details-button'.</msg>
-<arg>id:details-button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:47.579157" elapsed="0.037863"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:47.617020" level="INFO">Clicking element 'id:proceed-link'.</msg>
-<arg>id:proceed-link</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:47.617020" elapsed="0.242821"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:userNameInput</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:53:47.859841" elapsed="0.023742"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:47.883583" level="INFO">Typing text 'DSLAB\e_mvysko' into text field 'id:userNameInput'.</msg>
-<arg>id:userNameInput</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:47.883583" elapsed="0.078203"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:47.962796" level="INFO">Clicking element 'id:nextButton'.</msg>
-<arg>id:nextButton</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:47.962796" elapsed="0.035011"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:47.997807" level="INFO">Typing text 'Pr0ject_NemlaZ_0002' into text field 'id:passwordInput'.</msg>
-<arg>id:passwordInput</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:47.997807" elapsed="0.054324"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:48.053173" level="INFO">Clicking element 'id:submitButton'.</msg>
-<arg>id:submitButton</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:48.052131" elapsed="0.698277"/>
-</kw>
-<arg>${browser}</arg>
-<status status="PASS" start="2024-07-25T13:53:40.103932" elapsed="8.647474"/>
-</kw>
-<kw name="Vyhledej Účet">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:query</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:53:48.751611" elapsed="1.765550"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:50.518159" level="INFO">Typing text '2492856974' into text field 'id:query'.</msg>
-<arg>id:query</arg>
-<arg>${identifikační-číslo}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:50.517161" elapsed="0.057625"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:50.574786" level="INFO">Clicking button 'class:btn.btn-primary.btn-icon'.</msg>
-<arg>class:btn.btn-primary.btn-icon</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:50.574786" elapsed="0.047276"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath: //*[contains(text(), "${identifikační-číslo}")]</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:53:50.622062" elapsed="0.229675"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:50.852736" level="INFO">Clicking element 'xpath: //*[contains(text(), "2492856974")]'.</msg>
-<arg>xpath: //*[contains(text(), "${identifikační-číslo}")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:50.851737" elapsed="0.039160"/>
-</kw>
-<arg>${client-ID}</arg>
-<status status="PASS" start="2024-07-25T13:53:48.751611" elapsed="2.139286"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath: //*[contains(text(), "Sjednat")]</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:53:50.890897" elapsed="0.435271"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:51.327165" level="INFO">Clicking element 'xpath: //*[contains(text(), "Sjednat")]'.</msg>
-<arg>xpath: //*[contains(text(), "Sjednat")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:51.326168" elapsed="0.040278"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:phone</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:53:51.366446" elapsed="0.441006"/>
-</kw>
-<kw name="Generate Random String" owner="String">
-<msg time="2024-07-25T13:53:51.808481" level="INFO">${telcislo} = 562830</msg>
-<var>${telcislo}</var>
-<arg>6</arg>
-<arg>0123456789</arg>
-<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<status status="PASS" start="2024-07-25T13:53:51.807452" elapsed="0.001029"/>
-</kw>
-<kw name="Set Global Variable" owner="BuiltIn">
-<msg time="2024-07-25T13:53:51.808481" level="INFO">${telcislo} = 562830</msg>
-<arg>${telcislo}</arg>
-<doc>Makes a variable available globally in all tests and suites.</doc>
-<status status="PASS" start="2024-07-25T13:53:51.808481" elapsed="0.000997"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:51.809478" level="INFO">Typing text '608562830' into text field 'id:phone'.</msg>
-<arg>id:phone</arg>
-<arg>608${telcislo}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:51.809478" elapsed="0.104677"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:51.914155" level="INFO">Typing text 'robotframework@gmail.com' into text field 'id:email'.</msg>
-<arg>id:email</arg>
-<arg>robotframework@gmail.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:51.914155" elapsed="0.082242"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-07-25T13:53:52.998138" level="INFO">Slept 1 second.</msg>
-<arg>1 second</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-07-25T13:53:51.997394" elapsed="1.001753"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:53.000165" level="INFO">Clicking element 'class:btn.btn-primary'.</msg>
-<arg>class:btn.btn-primary</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:52.999147" elapsed="0.072566"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:53:53.071713" elapsed="0.018340"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:53.090053" level="INFO">Clicking element 'xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]'.</msg>
-<arg>xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:53.090053" elapsed="0.039717"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:53:53.131139" level="INFO">Clicking element 'name:bu10453'.</msg>
-<arg>name:bu10453</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:53:53.130765" elapsed="0.036849"/>
-</kw>
-<kw name="Close All Browsers" owner="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-07-25T13:53:53.168610" elapsed="6.194157"/>
-</kw>
-<status status="PASS" start="2024-07-25T13:53:40.102176" elapsed="19.260591"/>
-</kw>
-<status status="PASS" start="2024-07-25T13:53:40.100615" elapsed="19.264175"/>
-</test>
-<test id="s1-t3" name="Aktivace KB Klíče (KB ADMIN)" line="206">
+<test id="s1-t1" name="Aktivace BH(KB ADMIN)" line="203">
 <kw name="Aktivuj KB Klíč">
 <kw name="Open Application" owner="AppiumLibrary">
 <arg>http://localhost:4723</arg>
@@ -553,2653 +17,428 @@ Please check https://appium.io/docs/en/2.1/cli/args/
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" start="2024-07-25T13:53:59.371827" elapsed="8.344803"/>
+<status status="PASS" start="2024-07-25T14:48:20.758336" elapsed="9.505447"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:54:07.718760" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/button_next'.</msg>
-<msg time="2024-07-25T13:54:08.759871" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_next</msg>
+<msg time="2024-07-25T14:48:30.265555" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/button_next'.</msg>
+<msg time="2024-07-25T14:48:32.077326" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_next</msg>
 <arg>id=cz.kb.paat.kbdev1:id/button_next</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:54:07.717758" elapsed="1.043146"/>
+<status status="PASS" start="2024-07-25T14:48:30.264778" elapsed="1.813548"/>
 </kw>
 <arg>AppiumLibrary.Click Element</arg>
 <arg>id=cz.kb.paat.kbdev1:id/button_next</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2024-07-25T13:54:07.716630" elapsed="1.044274"/>
+<status status="PASS" start="2024-07-25T14:48:30.263783" elapsed="1.814581"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:54:08.762024" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/button_next'.</msg>
-<msg time="2024-07-25T13:54:09.595638" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_next</msg>
+<msg time="2024-07-25T14:48:32.079323" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/button_next'.</msg>
+<msg time="2024-07-25T14:48:32.263335" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_next</msg>
 <arg>id=cz.kb.paat.kbdev1:id/button_next</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:54:08.761494" elapsed="0.834144"/>
+<status status="PASS" start="2024-07-25T14:48:32.078364" elapsed="0.185970"/>
 </kw>
 <arg>AppiumLibrary.Click Element</arg>
 <arg>id=cz.kb.paat.kbdev1:id/button_next</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2024-07-25T13:54:08.760904" elapsed="0.835670"/>
+<status status="PASS" start="2024-07-25T14:48:32.078364" elapsed="0.185970"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:54:10.542916" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_manually
+<msg time="2024-07-25T14:48:33.206759" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_manually
 criteria is cz.kb.paat.kbdev1:id/button_manually</msg>
 <arg>id=cz.kb.paat.kbdev1:id/button_manually</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" start="2024-07-25T13:54:09.596574" elapsed="0.946518"/>
+<status status="PASS" start="2024-07-25T14:48:32.264334" elapsed="0.943690"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:54:10.543912" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/button_manually'.</msg>
-<msg time="2024-07-25T13:54:10.660206" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_manually</msg>
+<msg time="2024-07-25T14:48:33.209540" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/button_manually'.</msg>
+<msg time="2024-07-25T14:48:33.328401" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_manually</msg>
 <arg>id=cz.kb.paat.kbdev1:id/button_manually</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:54:10.543092" elapsed="0.118111"/>
+<status status="PASS" start="2024-07-25T14:48:33.208024" elapsed="0.121447"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:54:10.661203" level="INFO">Opening browser 'chrome' to base url 'https://dev1-caas.kb.cz/'.</msg>
+<msg time="2024-07-25T14:48:33.329471" level="INFO">Opening browser 'chrome' to base url 'https://dev1-caas.kb.cz/'.</msg>
 <arg>https://dev1-caas.kb.cz/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-07-25T13:54:10.661203" elapsed="1.649364"/>
+<status status="PASS" start="2024-07-25T14:48:33.329471" elapsed="1.709078"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-07-25T13:54:12.311564" elapsed="0.036781"/>
+<status status="PASS" start="2024-07-25T14:48:35.038549" elapsed="0.032819"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:54:12.349135" level="INFO">Clicking element 'id:details-button'.</msg>
+<msg time="2024-07-25T14:48:35.072496" level="INFO">Clicking element 'id:details-button'.</msg>
 <arg>id:details-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:54:12.348345" elapsed="0.078528"/>
+<status status="PASS" start="2024-07-25T14:48:35.071503" elapsed="0.092143"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:54:12.427871" level="INFO">Clicking element 'id:proceed-link'.</msg>
+<msg time="2024-07-25T14:48:35.164981" level="INFO">Clicking element 'id:proceed-link'.</msg>
 <arg>id:proceed-link</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:54:12.427871" elapsed="0.494744"/>
+<status status="PASS" start="2024-07-25T14:48:35.164644" elapsed="0.582540"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>id:details-button</arg>
 <arg>7 seconds</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:54:12.922615" elapsed="0.344764"/>
+<status status="PASS" start="2024-07-25T14:48:35.747184" elapsed="0.315189"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:54:13.268377" level="INFO">Clicking element 'id:details-button'.</msg>
+<msg time="2024-07-25T14:48:36.063369" level="INFO">Clicking element 'id:details-button'.</msg>
 <arg>id:details-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:54:13.268377" elapsed="0.047426"/>
+<status status="PASS" start="2024-07-25T14:48:36.062373" elapsed="0.043408"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:54:13.316786" level="INFO">Clicking element 'id:proceed-link'.</msg>
+<msg time="2024-07-25T14:48:36.106778" level="INFO">Clicking element 'id:proceed-link'.</msg>
 <arg>id:proceed-link</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:54:13.316786" elapsed="0.855914"/>
+<status status="PASS" start="2024-07-25T14:48:36.106778" elapsed="0.814467"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>id:details-button</arg>
 <arg>7 seconds</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:54:14.172700" elapsed="3.996457"/>
+<status status="PASS" start="2024-07-25T14:48:36.921946" elapsed="4.085732"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:54:18.169665" level="INFO">Clicking element 'id:details-button'.</msg>
+<msg time="2024-07-25T14:48:41.008929" level="INFO">Clicking element 'id:details-button'.</msg>
 <arg>id:details-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:54:18.169665" elapsed="0.044837"/>
+<status status="PASS" start="2024-07-25T14:48:41.008929" elapsed="0.045594"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:54:18.214502" level="INFO">Clicking element 'id:proceed-link'.</msg>
+<msg time="2024-07-25T14:48:41.055039" level="INFO">Clicking element 'id:proceed-link'.</msg>
 <arg>id:proceed-link</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:54:18.214502" elapsed="0.258266"/>
+<status status="PASS" start="2024-07-25T14:48:41.054523" elapsed="0.288471"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>id:userNameInput</arg>
 <arg>7 seconds</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:54:18.472768" elapsed="0.040689"/>
+<status status="PASS" start="2024-07-25T14:48:41.342994" elapsed="0.040500"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:54:18.514455" level="INFO">Typing text 'DSLAB\e_mvysko' into text field 'id:userNameInput'.</msg>
+<msg time="2024-07-25T14:48:41.385086" level="INFO">Typing text 'DSLAB\e_mvysko' into text field 'id:userNameInput'.</msg>
 <arg>id:userNameInput</arg>
 <arg>DSLAB\\e_mvysko</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:54:18.513457" elapsed="0.098303"/>
+<status status="PASS" start="2024-07-25T14:48:41.384493" elapsed="0.099535"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:54:18.612943" level="INFO">Clicking element 'id:nextButton'.</msg>
+<msg time="2024-07-25T14:48:41.484775" level="INFO">Clicking element 'id:nextButton'.</msg>
 <arg>id:nextButton</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:54:18.611760" elapsed="0.047651"/>
+<status status="PASS" start="2024-07-25T14:48:41.484028" elapsed="0.047140"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:54:18.660713" level="INFO">Typing text 'Pr0ject_NemlaZ_0002' into text field 'id:passwordInput'.</msg>
+<msg time="2024-07-25T14:48:41.532165" level="INFO">Typing text 'Pr0ject_NemlaZ_0002' into text field 'id:passwordInput'.</msg>
 <arg>id:passwordInput</arg>
 <arg>Pr0ject_NemlaZ_0002</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:54:18.660460" elapsed="0.064324"/>
+<status status="PASS" start="2024-07-25T14:48:41.531168" elapsed="0.070167"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:54:18.724784" level="INFO">Clicking element 'id:submitButton'.</msg>
+<msg time="2024-07-25T14:48:41.601335" level="INFO">Clicking element 'id:submitButton'.</msg>
 <arg>id:submitButton</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:54:18.724784" elapsed="0.773089"/>
+<status status="PASS" start="2024-07-25T14:48:41.601335" elapsed="0.728636"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>id:query</arg>
 <arg>7 seconds</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:54:19.497873" elapsed="1.873163"/>
+<status status="PASS" start="2024-07-25T14:48:42.329971" elapsed="1.799395"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:54:21.371036" level="INFO">Typing text '2492856974' into text field 'id:query'.</msg>
+<msg time="2024-07-25T14:48:44.130953" level="INFO">Typing text '' into text field 'id:query'.</msg>
 <arg>id:query</arg>
 <arg>${client-ID}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:54:21.371036" elapsed="0.080753"/>
+<status status="PASS" start="2024-07-25T14:48:44.130401" elapsed="0.077604"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:54:21.452787" level="INFO">Clicking button 'class:btn.btn-primary.btn-icon'.</msg>
+<msg time="2024-07-25T14:48:44.209002" level="INFO">Clicking button 'class:btn.btn-primary.btn-icon'.</msg>
 <arg>class:btn.btn-primary.btn-icon</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:54:21.451789" elapsed="0.061765"/>
+<status status="PASS" start="2024-07-25T14:48:44.209002" elapsed="0.083622"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath: //*[contains(text(), "${client-ID}")]</arg>
 <arg>7 seconds</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:54:21.513554" elapsed="0.282060"/>
+<status status="PASS" start="2024-07-25T14:48:44.293654" elapsed="0.033965"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:54:21.795926" level="INFO">Clicking element 'xpath: //*[contains(text(), "2492856974")]'.</msg>
+<msg time="2024-07-25T14:48:44.328616" level="INFO">Clicking element 'xpath: //*[contains(text(), "")]'.</msg>
 <arg>xpath: //*[contains(text(), "${client-ID}")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:54:21.795926" elapsed="0.138413"/>
+<status status="PASS" start="2024-07-25T14:48:44.327619" elapsed="0.054858"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-07-25T14:48:51.673408" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-29.png"&gt;&lt;img src="selenium-screenshot-29.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-07-25T14:48:51.673408" level="FAIL">Element 'xpath: //*[contains(text(), "KB Klíč")]' not visible after 7 seconds.</msg>
 <arg>xpath: //*[contains(text(), "KB Klíč")]</arg>
 <arg>7 seconds</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:54:21.935417" elapsed="0.471384"/>
+<status status="FAIL" start="2024-07-25T14:48:44.382477" elapsed="7.360854">Element 'xpath: //*[contains(text(), "KB Klíč")]' not visible after 7 seconds.</status>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:54:22.406801" level="INFO">Clicking element 'xpath: //*[contains(text(), "KB Klíč")]'.</msg>
 <arg>xpath: //*[contains(text(), "KB Klíč")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:54:22.406801" elapsed="0.045672"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.746380" elapsed="0.000466"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>class:btn.btn-primary</arg>
 <arg>7 seconds</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:54:22.452981" elapsed="0.665267"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.746846" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:54:23.119569" level="INFO">Clicking element 'class:btn.btn-primary'.</msg>
 <arg>class:btn.btn-primary</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:54:23.118248" elapsed="0.058773"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.747844" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]</arg>
 <arg>7 seconds</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:54:23.178018" elapsed="0.034163"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.749839" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:54:23.213179" level="INFO">Clicking element 'xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]'.</msg>
 <arg>xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:54:23.212181" elapsed="0.050438"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.750832" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:54:23.263605" level="INFO">Clicking element 'class:btn.btn-primary'.</msg>
 <arg>class:btn.btn-primary</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:54:23.263605" elapsed="0.055676"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.750832" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=(//strong[contains(@class, 'kb-h-semibold') and contains(@class, 'kb-h-font--bigger')])[2]</arg>
 <arg>7 seconds</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:54:23.320279" elapsed="0.869039"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.751926" elapsed="0.000000"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:54:24.224688" level="INFO">${OTP1} = 983254250</msg>
 <var>${OTP1}</var>
 <arg>xpath=(//strong[contains(@class, 'kb-h-semibold') and contains(@class, 'kb-h-font--bigger')])[2]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:54:24.190312" elapsed="0.034896"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.752437" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:54:24.226944" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/edt_username'.</msg>
-<msg time="2024-07-25T13:54:24.379468" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_username</msg>
 <arg>id=cz.kb.paat.kbdev1:id/edt_username</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:54:24.225865" elapsed="0.153603"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.752437" elapsed="0.000000"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2024-07-25T13:54:24.381642" level="INFO">Typing text '2492856974' into text field 'id=cz.kb.paat.kbdev1:id/edt_username'</msg>
-<msg time="2024-07-25T13:54:25.620903" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_username</msg>
 <arg>id=cz.kb.paat.kbdev1:id/edt_username</arg>
 <arg>${client-ID}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:54:24.380428" elapsed="1.241469"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.753434" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:54:25.623924" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/edt_activation_code'.</msg>
-<msg time="2024-07-25T13:54:27.182633" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_activation_code</msg>
 <arg>id=cz.kb.paat.kbdev1:id/edt_activation_code</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:54:25.621897" elapsed="1.561733"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.753434" elapsed="0.000000"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2024-07-25T13:54:27.184628" level="INFO">Typing text '983254250' into text field 'id=cz.kb.paat.kbdev1:id/edt_activation_code'</msg>
-<msg time="2024-07-25T13:54:27.311133" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_activation_code</msg>
 <arg>id=cz.kb.paat.kbdev1:id/edt_activation_code</arg>
 <arg>${OTP1}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:54:27.183975" elapsed="0.127158"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.754499" elapsed="0.000214"/>
 </kw>
 <kw name="Hide Keyboard" owner="AppiumLibrary">
 <doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press
 a particular key, ex. `Done`. In Android, no parameters are used.</doc>
-<status status="PASS" start="2024-07-25T13:54:27.312128" elapsed="1.375428"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.754713" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:54:28.689830" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/button_next'.</msg>
-<msg time="2024-07-25T13:54:28.887631" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_next</msg>
 <arg>id=cz.kb.paat.kbdev1:id/button_next</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:54:28.688791" elapsed="0.198840"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.755504" elapsed="0.000167"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-07-25T13:54:38.888673" level="INFO">Slept 10 seconds.</msg>
 <arg>10 seconds</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-07-25T13:54:28.888624" elapsed="10.000049"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.755671" elapsed="0.000460"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:54:38.889339" level="INFO">Opening url 'https://dev1-caas.kb.cz/otptestaccess'</msg>
 <arg>https://dev1-caas.kb.cz/otptestaccess</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-07-25T13:54:38.889339" elapsed="0.634773"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.756131" elapsed="0.000514"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>class:btn.btn-secondary</arg>
 <arg>7 seconds</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:54:39.525110" elapsed="0.037452"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.756645" elapsed="0.000511"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:54:39.563259" level="INFO">Clicking element 'class:btn.btn-secondary'.</msg>
 <arg>class:btn.btn-secondary</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:54:39.562562" elapsed="0.068555"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.757156" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath: //*[contains(text(), "${client-ID}")]</arg>
 <arg>7 seconds</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:54:39.632115" elapsed="0.477303"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.757156" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:54:40.110905" level="INFO">Clicking element 'xpath: //*[contains(text(), "2492856974")]'.</msg>
 <arg>xpath: //*[contains(text(), "${client-ID}")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:54:40.110905" elapsed="0.063812"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.758223" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>class:form-control-static</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:54:40.175716" elapsed="0.241507"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.758223" elapsed="0.000927"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:54:40.444536" level="INFO">${OTP2} = 499036 Copy OTP</msg>
 <var>${OTP2}</var>
 <arg>xpath=(//p[contains(@class, 'form-control-static')])[6]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:54:40.417223" elapsed="0.027825"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.759150" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:54:40.446221" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/edt_verification_code'.</msg>
-<msg time="2024-07-25T13:54:40.596994" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_verification_code</msg>
 <arg>id=cz.kb.paat.kbdev1:id/edt_verification_code</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:54:40.445048" elapsed="0.151946"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.760146" elapsed="0.000260"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2024-07-25T13:54:40.599306" level="INFO">Typing text '499036 Copy OTP' into text field 'id=cz.kb.paat.kbdev1:id/edt_verification_code'</msg>
-<msg time="2024-07-25T13:54:41.840642" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_verification_code</msg>
 <arg>id=cz.kb.paat.kbdev1:id/edt_verification_code</arg>
 <arg>${OTP2}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:54:40.596994" elapsed="1.243648"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.760406" elapsed="0.000550"/>
 </kw>
 <kw name="Hide Keyboard" owner="AppiumLibrary">
 <doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press
 a particular key, ex. `Done`. In Android, no parameters are used.</doc>
-<status status="PASS" start="2024-07-25T13:54:41.841192" elapsed="1.203573"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.760956" elapsed="0.000445"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:54:43.047759" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/button_next'.</msg>
-<msg time="2024-07-25T13:54:43.301281" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_next</msg>
 <arg>id=cz.kb.paat.kbdev1:id/button_next</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:54:43.045763" elapsed="0.255518"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.761541" elapsed="0.000000"/>
 </kw>
 <kw name="Generate Random String" owner="String">
-<msg time="2024-07-25T13:54:43.303279" level="INFO">${client-username} = ugPqIHo</msg>
 <var>${client-username}</var>
 <arg>7</arg>
 <arg>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</arg>
 <doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<status status="PASS" start="2024-07-25T13:54:43.302277" elapsed="0.001002"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.761857" elapsed="0.000000"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2024-07-25T13:54:44.278933" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_nickname</msg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_nickname</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:54:43.304272" elapsed="0.974661"/>
-</kw>
 <arg>AppiumLibrary.Wait Until Element Is Visible</arg>
 <arg>id=cz.kb.paat.kbdev1:id/edt_nickname</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2024-07-25T13:54:43.303279" elapsed="0.975654"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.762398" elapsed="0.000000"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Input Text" owner="AppiumLibrary">
-<msg time="2024-07-25T13:54:44.280470" level="INFO">Typing text 'ugPqIHo' into text field 'id=cz.kb.paat.kbdev1:id/edt_nickname'</msg>
-<msg time="2024-07-25T13:54:44.335293" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_nickname</msg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_nickname</arg>
-<arg>${client-username}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:54:44.279443" elapsed="0.055850"/>
-</kw>
 <arg>AppiumLibrary.Input Text</arg>
 <arg>id=cz.kb.paat.kbdev1:id/edt_nickname</arg>
 <arg>${client-username}</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2024-07-25T13:54:44.279443" elapsed="0.055850"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.762398" elapsed="0.000000"/>
 </kw>
 <kw name="Hide Keyboard" owner="AppiumLibrary">
 <doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press
 a particular key, ex. `Done`. In Android, no parameters are used.</doc>
-<status status="PASS" start="2024-07-25T13:54:44.335293" elapsed="0.329089"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.762398" elapsed="0.000999"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:54:44.666128" level="INFO">Clicking element 'cz.kb.paat.kbdev1:id/button_next'.</msg>
-<msg time="2024-07-25T13:54:44.924118" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_next</msg>
-<arg>cz.kb.paat.kbdev1:id/button_next</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:54:44.664915" elapsed="0.259203"/>
-</kw>
 <arg>AppiumLibrary.Click Element</arg>
 <arg>cz.kb.paat.kbdev1:id/button_next</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2024-07-25T13:54:44.664915" elapsed="0.259203"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.763397" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2024-07-25T13:54:45.906038" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_new_password</msg>
 <arg>id=cz.kb.paat.kbdev1:id/edt_new_password</arg>
 <arg>7 seconds</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:54:44.924118" elapsed="0.981920"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.763397" elapsed="0.000997"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:54:45.907105" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/edt_new_password'.</msg>
-<msg time="2024-07-25T13:54:46.973183" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_new_password</msg>
 <arg>id=cz.kb.paat.kbdev1:id/edt_new_password</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:54:45.906038" elapsed="1.067145"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.764394" elapsed="0.000000"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2024-07-25T13:54:46.976033" level="INFO">Typing text '147321' into text field 'id=cz.kb.paat.kbdev1:id/edt_new_password'</msg>
-<msg time="2024-07-25T13:54:47.053127" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_new_password</msg>
 <arg>id=cz.kb.paat.kbdev1:id/edt_new_password</arg>
 <arg>147321</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:54:46.973183" elapsed="0.079944"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.764394" elapsed="0.000997"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:54:47.054120" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/edt_new_password2'.</msg>
-<msg time="2024-07-25T13:54:48.386512" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_new_password2</msg>
 <arg>id=cz.kb.paat.kbdev1:id/edt_new_password2</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:54:47.053127" elapsed="1.333734"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.765391" elapsed="0.000000"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2024-07-25T13:54:48.388502" level="INFO">Typing text '147321' into text field 'id=cz.kb.paat.kbdev1:id/edt_new_password2'</msg>
-<msg time="2024-07-25T13:54:48.462262" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_new_password2</msg>
 <arg>id=cz.kb.paat.kbdev1:id/edt_new_password2</arg>
 <arg>147321</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:54:48.386861" elapsed="0.075401"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.765391" elapsed="0.000998"/>
 </kw>
 <kw name="Hide Keyboard" owner="AppiumLibrary">
 <doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press
 a particular key, ex. `Done`. In Android, no parameters are used.</doc>
-<status status="PASS" start="2024-07-25T13:54:48.462810" elapsed="0.761687"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.766389" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2024-07-25T13:54:49.630033" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_next</msg>
 <arg>id=cz.kb.paat.kbdev1:id/button_next</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:54:49.225369" elapsed="0.404664"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.766389" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:54:49.633143" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/button_next'.</msg>
-<msg time="2024-07-25T13:54:50.380613" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_next</msg>
 <arg>id=cz.kb.paat.kbdev1:id/button_next</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:54:49.631168" elapsed="0.749445"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.767386" elapsed="0.000175"/>
 </kw>
 <kw name="Close Application" owner="AppiumLibrary">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" start="2024-07-25T13:54:50.381613" elapsed="0.742889"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.767708" elapsed="0.000000"/>
 </kw>
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-07-25T13:54:51.125329" elapsed="6.358030"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.767708" elapsed="0.000847"/>
 </kw>
-<status status="PASS" start="2024-07-25T13:53:59.370782" elapsed="58.112577"/>
-</kw>
-<status status="PASS" start="2024-07-25T13:53:59.367752" elapsed="58.116604"/>
-</test>
-<test id="s1-t4" name="Deaktivace KB Klíče (KB ADMIN)" line="210">
-<kw name="Deaktivuj KB Klíč">
-<kw name="Otevři KB Admin">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:54:57.491870" level="INFO">Opening browser 'chrome' to base url 'https://dev1-caas.kb.cz/'.</msg>
-<arg>https://dev1-caas.kb.cz/</arg>
-<arg>${prohlížeč}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-07-25T13:54:57.490857" elapsed="1.530937"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-07-25T13:54:59.021794" elapsed="0.025855"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:54:59.048043" level="INFO">Clicking element 'id:details-button'.</msg>
-<arg>id:details-button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:54:59.048043" elapsed="0.049320"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:54:59.098360" level="INFO">Clicking element 'id:proceed-link'.</msg>
-<arg>id:proceed-link</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:54:59.098360" elapsed="0.424775"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:details-button</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:54:59.524132" elapsed="0.237155"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:54:59.761287" level="INFO">Clicking element 'id:details-button'.</msg>
-<arg>id:details-button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:54:59.761287" elapsed="0.037171"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:54:59.799325" level="INFO">Clicking element 'id:proceed-link'.</msg>
-<arg>id:proceed-link</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:54:59.799325" elapsed="0.790427"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:details-button</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:55:00.589752" elapsed="4.141912"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:04.731664" level="INFO">Clicking element 'id:details-button'.</msg>
-<arg>id:details-button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:04.731664" elapsed="0.038584"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:04.771233" level="INFO">Clicking element 'id:proceed-link'.</msg>
-<arg>id:proceed-link</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:04.770248" elapsed="0.267179"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:userNameInput</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:55:05.038124" elapsed="0.031783"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:05.070905" level="INFO">Typing text 'DSLAB\e_mvysko' into text field 'id:userNameInput'.</msg>
-<arg>id:userNameInput</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:05.069907" elapsed="0.082918"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:05.152825" level="INFO">Clicking element 'id:nextButton'.</msg>
-<arg>id:nextButton</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:05.152825" elapsed="0.037462"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:05.191019" level="INFO">Typing text 'Pr0ject_NemlaZ_0002' into text field 'id:passwordInput'.</msg>
-<arg>id:passwordInput</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:05.190287" elapsed="0.052699"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:05.243983" level="INFO">Clicking element 'id:submitButton'.</msg>
-<arg>id:submitButton</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:05.243983" elapsed="0.800364"/>
-</kw>
-<arg>${browser}</arg>
-<status status="PASS" start="2024-07-25T13:54:57.489858" elapsed="8.554489"/>
-</kw>
-<kw name="Vyhledej Účet">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:query</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:55:06.045377" elapsed="1.951356"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:07.997731" level="INFO">Typing text '2492856974' into text field 'id:query'.</msg>
-<arg>id:query</arg>
-<arg>${identifikační-číslo}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:07.997731" elapsed="0.068265"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:08.066993" level="INFO">Clicking button 'class:btn.btn-primary.btn-icon'.</msg>
-<arg>class:btn.btn-primary.btn-icon</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:08.066993" elapsed="0.062234"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath: //*[contains(text(), "${identifikační-číslo}")]</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:55:08.129227" elapsed="0.232246"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:08.362541" level="INFO">Clicking element 'xpath: //*[contains(text(), "2492856974")]'.</msg>
-<arg>xpath: //*[contains(text(), "${identifikační-číslo}")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:08.362541" elapsed="0.033266"/>
-</kw>
-<arg>${client-ID}</arg>
-<status status="PASS" start="2024-07-25T13:55:06.045377" elapsed="2.350430"/>
-</kw>
-<kw name="Otestuj Akci">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>class:kb-linkbox__inner</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:55:08.396804" elapsed="0.432796"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:08.829600" level="INFO">Clicking element 'class:kb-linkbox__inner'.</msg>
-<arg>class:kb-linkbox__inner</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:08.829600" elapsed="0.031466"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath: //*[contains(text(), "${název-akce}")]</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:55:08.862063" elapsed="0.227609"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:09.089672" level="INFO">Clicking element 'xpath: //*[contains(text(), "Deaktivovat metodu")]'.</msg>
-<arg>xpath: //*[contains(text(), "${název-akce}")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:09.089672" elapsed="0.037634"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>class:btn.btn-primary.mt-2</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:55:09.128330" elapsed="0.473429"/>
-</kw>
-<arg>SeleniumLibrary.Wait Until Element Is Visible</arg>
-<arg>class:btn.btn-primary.mt-2</arg>
-<arg>7 seconds</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2024-07-25T13:55:09.127306" elapsed="0.474453"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:09.602755" level="INFO">Clicking element 'class:btn.btn-primary.mt-2'.</msg>
-<arg>class:btn.btn-primary.mt-2</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:09.602755" elapsed="0.034403"/>
-</kw>
-<arg>SeleniumLibrary.Click Element</arg>
-<arg>class:btn.btn-primary.mt-2</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2024-07-25T13:55:09.602755" elapsed="0.035400"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:55:09.638155" elapsed="0.019224"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:09.657379" level="INFO">Clicking element 'xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]'.</msg>
-<arg>xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:09.657379" elapsed="0.032271"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:09.690647" level="INFO">Clicking element 'name:bu10453'.</msg>
-<arg>name:bu10453</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:09.689650" elapsed="0.034081"/>
-</kw>
-<kw name="Close All Browsers" owner="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-07-25T13:55:09.723731" elapsed="6.206101"/>
-</kw>
-<arg>Deaktivovat metodu</arg>
-<status status="PASS" start="2024-07-25T13:55:08.395807" elapsed="7.534543"/>
-</kw>
-<status status="PASS" start="2024-07-25T13:54:57.488865" elapsed="18.441485"/>
-</kw>
-<status status="PASS" start="2024-07-25T13:54:57.487830" elapsed="18.443515"/>
-</test>
-<test id="s1-t5" name="Blokace KB Klíče (KB ADMIN)" line="212">
-<kw name="Aktivuj KB Klíč">
-<kw name="Open Application" owner="AppiumLibrary">
-<arg>http://localhost:4723</arg>
-<arg>platformName=Android</arg>
-<arg>deviceName=emulator-5554</arg>
-<arg>appPackage=cz.kb.paat.kbdev1</arg>
-<arg>appActivity=cz.kb.paat.ui.MainActivity</arg>
-<arg>automationName=UiAutomator2</arg>
-<doc>Opens a new application to given Appium server.
-Capabilities of appium server, Android and iOS,
-Please check https://appium.io/docs/en/2.1/cli/args/
-| *Option*            | *Man.* | *Description*     |
-| remote_url          | Yes    | Appium server url |
-| alias               | no     | alias             |
-| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" start="2024-07-25T13:55:15.935333" elapsed="8.033077"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:55:23.970423" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/button_next'.</msg>
-<msg time="2024-07-25T13:55:25.204662" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_next</msg>
-<arg>id=cz.kb.paat.kbdev1:id/button_next</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:55:23.969923" elapsed="1.234739"/>
-</kw>
-<arg>AppiumLibrary.Click Element</arg>
-<arg>id=cz.kb.paat.kbdev1:id/button_next</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2024-07-25T13:55:23.969405" elapsed="1.236253"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:55:25.208293" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/button_next'.</msg>
-<msg time="2024-07-25T13:55:26.041157" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_next</msg>
-<arg>id=cz.kb.paat.kbdev1:id/button_next</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:55:25.206691" elapsed="0.834466"/>
-</kw>
-<arg>AppiumLibrary.Click Element</arg>
-<arg>id=cz.kb.paat.kbdev1:id/button_next</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2024-07-25T13:55:25.205658" elapsed="0.836003"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:55:27.404917" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_manually
-criteria is cz.kb.paat.kbdev1:id/button_manually</msg>
-<arg>id=cz.kb.paat.kbdev1:id/button_manually</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" start="2024-07-25T13:55:26.042186" elapsed="1.362731"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:55:27.407462" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/button_manually'.</msg>
-<msg time="2024-07-25T13:55:27.552370" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_manually</msg>
-<arg>id=cz.kb.paat.kbdev1:id/button_manually</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:55:27.404917" elapsed="0.147453"/>
-</kw>
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:27.553703" level="INFO">Opening browser 'chrome' to base url 'https://dev1-caas.kb.cz/'.</msg>
-<arg>https://dev1-caas.kb.cz/</arg>
-<arg>chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-07-25T13:55:27.552370" elapsed="2.587932"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-07-25T13:55:30.141300" elapsed="0.045876"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:30.188396" level="INFO">Clicking element 'id:details-button'.</msg>
-<arg>id:details-button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:30.187883" elapsed="0.110066"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:30.298950" level="INFO">Clicking element 'id:proceed-link'.</msg>
-<arg>id:proceed-link</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:30.297949" elapsed="0.681621"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:details-button</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:55:30.980562" elapsed="0.366203"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:31.347616" level="INFO">Clicking element 'id:details-button'.</msg>
-<arg>id:details-button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:31.347616" elapsed="0.086632"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:31.435202" level="INFO">Clicking element 'id:proceed-link'.</msg>
-<arg>id:proceed-link</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:31.434760" elapsed="1.033097"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:details-button</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:55:32.467857" elapsed="4.181695"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:36.650600" level="INFO">Clicking element 'id:details-button'.</msg>
-<arg>id:details-button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:36.650066" elapsed="0.065661"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:36.716722" level="INFO">Clicking element 'id:proceed-link'.</msg>
-<arg>id:proceed-link</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:36.715727" elapsed="0.340760"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:userNameInput</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:55:37.056487" elapsed="0.065368"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:37.123280" level="INFO">Typing text 'DSLAB\e_mvysko' into text field 'id:userNameInput'.</msg>
-<arg>id:userNameInput</arg>
-<arg>DSLAB\\e_mvysko</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:37.122883" elapsed="0.165454"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:37.289334" level="INFO">Clicking element 'id:nextButton'.</msg>
-<arg>id:nextButton</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:37.288337" elapsed="0.080945"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:37.369282" level="INFO">Typing text 'Pr0ject_NemlaZ_0002' into text field 'id:passwordInput'.</msg>
-<arg>id:passwordInput</arg>
-<arg>Pr0ject_NemlaZ_0002</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:37.369282" elapsed="0.115296"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:37.485575" level="INFO">Clicking element 'id:submitButton'.</msg>
-<arg>id:submitButton</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:37.484578" elapsed="0.898367"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:query</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:55:38.382945" elapsed="2.078588"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:40.462532" level="INFO">Typing text '2492856974' into text field 'id:query'.</msg>
-<arg>id:query</arg>
-<arg>${client-ID}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:40.462532" elapsed="0.124821"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:40.588224" level="INFO">Clicking button 'class:btn.btn-primary.btn-icon'.</msg>
-<arg>class:btn.btn-primary.btn-icon</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:40.588224" elapsed="0.098662"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath: //*[contains(text(), "${client-ID}")]</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:55:40.687087" elapsed="0.248653"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:40.936735" level="INFO">Clicking element 'xpath: //*[contains(text(), "2492856974")]'.</msg>
-<arg>xpath: //*[contains(text(), "${client-ID}")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:40.935740" elapsed="0.075283"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath: //*[contains(text(), "KB Klíč")]</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:55:41.012037" elapsed="0.497892"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:41.510934" level="INFO">Clicking element 'xpath: //*[contains(text(), "KB Klíč")]'.</msg>
-<arg>xpath: //*[contains(text(), "KB Klíč")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:41.509929" elapsed="0.083383"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>class:btn.btn-primary</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:55:41.594119" elapsed="0.489205"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:42.083834" level="INFO">Clicking element 'class:btn.btn-primary'.</msg>
-<arg>class:btn.btn-primary</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:42.083834" elapsed="0.066582"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:55:42.150933" elapsed="0.037123"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:42.189574" level="INFO">Clicking element 'xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]'.</msg>
-<arg>xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:42.189574" elapsed="0.081854"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:42.272515" level="INFO">Clicking element 'class:btn.btn-primary'.</msg>
-<arg>class:btn.btn-primary</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:42.272515" elapsed="0.065281"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath=(//strong[contains(@class, 'kb-h-semibold') and contains(@class, 'kb-h-font--bigger')])[2]</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:55:42.338601" elapsed="0.666124"/>
-</kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:43.037999" level="INFO">${OTP1} = 495893578</msg>
-<var>${OTP1}</var>
-<arg>xpath=(//strong[contains(@class, 'kb-h-semibold') and contains(@class, 'kb-h-font--bigger')])[2]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:43.004725" elapsed="0.033274"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:55:43.040993" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/edt_username'.</msg>
-<msg time="2024-07-25T13:55:43.198774" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_username</msg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_username</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:55:43.037999" elapsed="0.161063"/>
-</kw>
-<kw name="Input Text" owner="AppiumLibrary">
-<msg time="2024-07-25T13:55:43.200600" level="INFO">Typing text '2492856974' into text field 'id=cz.kb.paat.kbdev1:id/edt_username'</msg>
-<msg time="2024-07-25T13:55:44.384560" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_username</msg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_username</arg>
-<arg>${client-ID}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:55:43.199062" elapsed="1.185498"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:55:44.387490" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/edt_activation_code'.</msg>
-<msg time="2024-07-25T13:55:45.942171" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_activation_code</msg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_activation_code</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:55:44.384560" elapsed="1.558126"/>
-</kw>
-<kw name="Input Text" owner="AppiumLibrary">
-<msg time="2024-07-25T13:55:45.943676" level="INFO">Typing text '495893578' into text field 'id=cz.kb.paat.kbdev1:id/edt_activation_code'</msg>
-<msg time="2024-07-25T13:55:46.043862" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_activation_code</msg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_activation_code</arg>
-<arg>${OTP1}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:55:45.942686" elapsed="0.101176"/>
-</kw>
-<kw name="Hide Keyboard" owner="AppiumLibrary">
-<doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press
-a particular key, ex. `Done`. In Android, no parameters are used.</doc>
-<status status="PASS" start="2024-07-25T13:55:46.044859" elapsed="1.505189"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:55:47.554159" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/button_next'.</msg>
-<msg time="2024-07-25T13:55:47.757078" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_next</msg>
-<arg>id=cz.kb.paat.kbdev1:id/button_next</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:55:47.551046" elapsed="0.206032"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-07-25T13:55:57.758597" level="INFO">Slept 10 seconds.</msg>
-<arg>10 seconds</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-07-25T13:55:47.757078" elapsed="10.001519"/>
-</kw>
-<kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:57.759110" level="INFO">Opening url 'https://dev1-caas.kb.cz/otptestaccess'</msg>
-<arg>https://dev1-caas.kb.cz/otptestaccess</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-07-25T13:55:57.759110" elapsed="0.474119"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>class:btn.btn-secondary</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:55:58.233229" elapsed="0.030563"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:58.263792" level="INFO">Clicking element 'class:btn.btn-secondary'.</msg>
-<arg>class:btn.btn-secondary</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:58.263792" elapsed="0.062515"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath: //*[contains(text(), "${client-ID}")]</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:55:58.327371" elapsed="0.453291"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:58.780662" level="INFO">Clicking element 'xpath: //*[contains(text(), "2492856974")]'.</msg>
-<arg>xpath: //*[contains(text(), "${client-ID}")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:58.780662" elapsed="0.053888"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>class:form-control-static</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:55:58.835547" elapsed="0.232522"/>
-</kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:55:59.092244" level="INFO">${OTP2} = 595747 Copy OTP</msg>
-<var>${OTP2}</var>
-<arg>xpath=(//p[contains(@class, 'form-control-static')])[6]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:55:59.068069" elapsed="0.024175"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:55:59.094753" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/edt_verification_code'.</msg>
-<msg time="2024-07-25T13:55:59.237108" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_verification_code</msg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_verification_code</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:55:59.092244" elapsed="0.144864"/>
-</kw>
-<kw name="Input Text" owner="AppiumLibrary">
-<msg time="2024-07-25T13:55:59.239512" level="INFO">Typing text '595747 Copy OTP' into text field 'id=cz.kb.paat.kbdev1:id/edt_verification_code'</msg>
-<msg time="2024-07-25T13:56:00.308752" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_verification_code</msg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_verification_code</arg>
-<arg>${OTP2}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:55:59.238102" elapsed="1.070650"/>
-</kw>
-<kw name="Hide Keyboard" owner="AppiumLibrary">
-<doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press
-a particular key, ex. `Done`. In Android, no parameters are used.</doc>
-<status status="PASS" start="2024-07-25T13:56:00.308752" elapsed="1.289953"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:56:01.600734" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/button_next'.</msg>
-<msg time="2024-07-25T13:56:01.869025" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_next</msg>
-<arg>id=cz.kb.paat.kbdev1:id/button_next</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:56:01.599228" elapsed="0.270599"/>
-</kw>
-<kw name="Generate Random String" owner="String">
-<msg time="2024-07-25T13:56:01.870803" level="INFO">${client-username} = NqaWqym</msg>
-<var>${client-username}</var>
-<arg>7</arg>
-<arg>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</arg>
-<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<status status="PASS" start="2024-07-25T13:56:01.869827" elapsed="0.000976"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<kw name="Capture Page Screenshot">
-<msg time="2024-07-25T13:56:07.193343" level="FAIL">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</msg>
-<status status="FAIL" start="2024-07-25T13:56:07.193343" elapsed="0.000000">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</status>
-</kw>
-<msg time="2024-07-25T13:56:07.194176" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</msg>
-<msg time="2024-07-25T13:56:07.196068" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_nickname
-criteria is cz.kb.paat.kbdev1:id/edt_nickname
-criteria is cz.kb.paat.kbdev1:id/edt_nickname
-criteria is cz.kb.paat.kbdev1:id/edt_nickname
-criteria is cz.kb.paat.kbdev1:id/edt_nickname
-criteria is cz.kb.paat.kbdev1:id/edt_nickname
-criteria is cz.kb.paat.kbdev1:id/edt_nickname
-criteria is cz.kb.paat.kbdev1:id/edt_nickname
-criteria is cz.kb.paat.kbdev1:id/edt_nickname
-criteria is cz.kb.paat.kbdev1:id/edt_nickname
-criteria is cz.kb.paat.kbdev1:id/edt_nickname
-criteria is cz.kb.paat.kbdev1:id/edt_nickname
-criteria is cz.kb.paat.kbdev1:id/edt_nickname
-criteria is cz.kb.paat.kbdev1:id/edt_nickname
-criteria is cz.kb.paat.kbdev1:id/edt_nickname
-criteria is cz.kb.paat.kbdev1:id/edt_nickname</msg>
-<msg time="2024-07-25T13:56:07.196068" level="FAIL">Element locator 'id=cz.kb.paat.kbdev1:id/edt_nickname' did not match any elements after 5 seconds</msg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_nickname</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="FAIL" start="2024-07-25T13:56:01.871852" elapsed="5.326211">Element locator 'id=cz.kb.paat.kbdev1:id/edt_nickname' did not match any elements after 5 seconds</status>
-</kw>
-<arg>AppiumLibrary.Wait Until Element Is Visible</arg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_nickname</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2024-07-25T13:56:01.871322" elapsed="5.326741"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Input Text" owner="AppiumLibrary">
-<msg time="2024-07-25T13:56:07.201012" level="INFO">Typing text 'NqaWqym' into text field 'id=cz.kb.paat.kbdev1:id/edt_nickname'</msg>
-<kw name="Capture Page Screenshot">
-<msg time="2024-07-25T13:56:07.258484" level="FAIL">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</msg>
-<status status="FAIL" start="2024-07-25T13:56:07.258484" elapsed="0.000000">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</status>
-</kw>
-<msg time="2024-07-25T13:56:07.259990" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</msg>
-<msg time="2024-07-25T13:56:07.260986" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_nickname</msg>
-<msg time="2024-07-25T13:56:07.261984" level="FAIL">ValueError: Element locator 'id=cz.kb.paat.kbdev1:id/edt_nickname' did not match any elements.</msg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_nickname</arg>
-<arg>${client-username}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="FAIL" start="2024-07-25T13:56:07.199061" elapsed="0.065916">ValueError: Element locator 'id=cz.kb.paat.kbdev1:id/edt_nickname' did not match any elements.</status>
-</kw>
-<arg>AppiumLibrary.Input Text</arg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_nickname</arg>
-<arg>${client-username}</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2024-07-25T13:56:07.199061" elapsed="0.066912"/>
-</kw>
-<kw name="Hide Keyboard" owner="AppiumLibrary">
-<doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press
-a particular key, ex. `Done`. In Android, no parameters are used.</doc>
-<status status="PASS" start="2024-07-25T13:56:07.265973" elapsed="0.629205"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:56:07.897054" level="INFO">Clicking element 'cz.kb.paat.kbdev1:id/button_next'.</msg>
-<msg time="2024-07-25T13:56:08.068232" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_next</msg>
-<arg>cz.kb.paat.kbdev1:id/button_next</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:56:07.896058" elapsed="0.172174"/>
-</kw>
-<arg>AppiumLibrary.Click Element</arg>
-<arg>cz.kb.paat.kbdev1:id/button_next</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2024-07-25T13:56:07.895178" elapsed="0.173054"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2024-07-25T13:56:08.723500" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_new_password</msg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_new_password</arg>
-<arg>7 seconds</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:56:08.069229" elapsed="0.654271"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:56:08.726499" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/edt_new_password'.</msg>
-<msg time="2024-07-25T13:56:08.939921" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_new_password</msg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_new_password</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:56:08.723500" elapsed="0.216421"/>
-</kw>
-<kw name="Input Text" owner="AppiumLibrary">
-<msg time="2024-07-25T13:56:08.943150" level="INFO">Typing text '147321' into text field 'id=cz.kb.paat.kbdev1:id/edt_new_password'</msg>
-<msg time="2024-07-25T13:56:10.126123" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_new_password</msg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_new_password</arg>
-<arg>147321</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:56:08.939921" elapsed="1.186202"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:56:10.128738" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/edt_new_password2'.</msg>
-<msg time="2024-07-25T13:56:10.976190" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_new_password2</msg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_new_password2</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:56:10.127120" elapsed="0.849070"/>
-</kw>
-<kw name="Input Text" owner="AppiumLibrary">
-<msg time="2024-07-25T13:56:10.978187" level="INFO">Typing text '147321' into text field 'id=cz.kb.paat.kbdev1:id/edt_new_password2'</msg>
-<msg time="2024-07-25T13:56:11.672665" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_new_password2</msg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_new_password2</arg>
-<arg>147321</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:56:10.976190" elapsed="0.696475"/>
-</kw>
-<kw name="Hide Keyboard" owner="AppiumLibrary">
-<doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press
-a particular key, ex. `Done`. In Android, no parameters are used.</doc>
-<status status="PASS" start="2024-07-25T13:56:11.673175" elapsed="0.706891"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2024-07-25T13:56:12.819656" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_next</msg>
-<arg>id=cz.kb.paat.kbdev1:id/button_next</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:56:12.380563" elapsed="0.439093"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:56:12.820872" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/button_next'.</msg>
-<msg time="2024-07-25T13:56:13.524169" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_next</msg>
-<arg>id=cz.kb.paat.kbdev1:id/button_next</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:56:12.820176" elapsed="0.703993"/>
-</kw>
-<kw name="Close Application" owner="AppiumLibrary">
-<doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" start="2024-07-25T13:56:13.524169" elapsed="0.627974"/>
-</kw>
-<kw name="Close All Browsers" owner="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-07-25T13:56:14.153147" elapsed="6.388320"/>
-</kw>
-<status status="PASS" start="2024-07-25T13:55:15.934337" elapsed="64.607856"/>
+<status status="FAIL" start="2024-07-25T14:48:20.757397" elapsed="31.011158">Element 'xpath: //*[contains(text(), "KB Klíč")]' not visible after 7 seconds.</status>
 </kw>
 <kw name="Otevři KB Admin">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:20.543187" level="INFO">Opening browser 'chrome' to base url 'https://dev1-caas.kb.cz/'.</msg>
-<arg>https://dev1-caas.kb.cz/</arg>
-<arg>${prohlížeč}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-07-25T13:56:20.543187" elapsed="1.530104"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-07-25T13:56:22.074288" elapsed="0.025614"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:22.099902" level="INFO">Clicking element 'id:details-button'.</msg>
-<arg>id:details-button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:22.099902" elapsed="0.053869"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:22.153771" level="INFO">Clicking element 'id:proceed-link'.</msg>
-<arg>id:proceed-link</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:22.153771" elapsed="0.631911"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:details-button</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:56:22.785682" elapsed="0.355145"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:23.141825" level="INFO">Clicking element 'id:details-button'.</msg>
-<arg>id:details-button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:23.140827" elapsed="0.039846"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:23.180673" level="INFO">Clicking element 'id:proceed-link'.</msg>
-<arg>id:proceed-link</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:23.180673" elapsed="0.911218"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:details-button</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:56:24.092887" elapsed="4.020950"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:28.113837" level="INFO">Clicking element 'id:details-button'.</msg>
-<arg>id:details-button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:28.113837" elapsed="0.035239"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:28.150071" level="INFO">Clicking element 'id:proceed-link'.</msg>
-<arg>id:proceed-link</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:28.149076" elapsed="0.347562"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:userNameInput</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:56:28.496638" elapsed="0.025550"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:28.522188" level="INFO">Typing text 'DSLAB\e_mvysko' into text field 'id:userNameInput'.</msg>
-<arg>id:userNameInput</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:28.522188" elapsed="0.079273"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:28.602459" level="INFO">Clicking element 'id:nextButton'.</msg>
-<arg>id:nextButton</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:28.601461" elapsed="0.037590"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:28.640096" level="INFO">Typing text 'Pr0ject_NemlaZ_0002' into text field 'id:passwordInput'.</msg>
-<arg>id:passwordInput</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:28.640049" elapsed="0.050688"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:28.691735" level="INFO">Clicking element 'id:submitButton'.</msg>
-<arg>id:submitButton</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:28.691735" elapsed="0.786982"/>
-</kw>
 <arg>${browser}</arg>
-<status status="PASS" start="2024-07-25T13:56:20.543187" elapsed="8.935530"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.782687" elapsed="0.000634"/>
 </kw>
 <kw name="Vyhledej Účet">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:query</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:56:29.479714" elapsed="1.842494"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:31.322208" level="INFO">Typing text '2492856974' into text field 'id:query'.</msg>
-<arg>id:query</arg>
-<arg>${identifikační-číslo}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:31.322208" elapsed="0.051101"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:31.373309" level="INFO">Clicking button 'class:btn.btn-primary.btn-icon'.</msg>
-<arg>class:btn.btn-primary.btn-icon</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:31.373309" elapsed="0.055389"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath: //*[contains(text(), "${identifikační-číslo}")]</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:56:31.428698" elapsed="0.226958"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:31.656500" level="INFO">Clicking element 'xpath: //*[contains(text(), "2492856974")]'.</msg>
-<arg>xpath: //*[contains(text(), "${identifikační-číslo}")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:31.656500" elapsed="0.037475"/>
-</kw>
 <arg>${client-ID}</arg>
-<status status="PASS" start="2024-07-25T13:56:29.478717" elapsed="2.216257"/>
+<status status="NOT RUN" start="2024-07-25T14:48:51.789596" elapsed="0.000000"/>
 </kw>
 <kw name="Otestuj Akci">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>class:kb-linkbox__inner</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:56:31.695970" elapsed="0.436914"/>
+<arg>Bezpečnostní heslo</arg>
+<status status="NOT RUN" start="2024-07-25T14:48:51.790847" elapsed="0.000000"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:32.132884" level="INFO">Clicking element 'class:kb-linkbox__inner'.</msg>
-<arg>class:kb-linkbox__inner</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:32.132884" elapsed="0.033394"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath: //*[contains(text(), "${název-akce}")]</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:56:32.167275" elapsed="0.229783"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:32.397058" level="INFO">Clicking element 'xpath: //*[contains(text(), "Blokovat metodu")]'.</msg>
-<arg>xpath: //*[contains(text(), "${název-akce}")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:32.397058" elapsed="0.083221"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>class:btn.btn-primary.mt-2</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:56:32.481305" elapsed="0.484328"/>
-</kw>
-<arg>SeleniumLibrary.Wait Until Element Is Visible</arg>
-<arg>class:btn.btn-primary.mt-2</arg>
-<arg>7 seconds</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2024-07-25T13:56:32.480279" elapsed="0.485354"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:32.966632" level="INFO">Clicking element 'class:btn.btn-primary.mt-2'.</msg>
-<arg>class:btn.btn-primary.mt-2</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:32.966632" elapsed="0.036330"/>
-</kw>
-<arg>SeleniumLibrary.Click Element</arg>
-<arg>class:btn.btn-primary.mt-2</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2024-07-25T13:56:32.966632" elapsed="0.037326"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:56:33.003958" elapsed="0.020013"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:33.024969" level="INFO">Clicking element 'xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]'.</msg>
-<arg>xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:33.024969" elapsed="0.033073"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:33.058243" level="INFO">Clicking element 'name:bu10453'.</msg>
-<arg>name:bu10453</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:33.058243" elapsed="0.032782"/>
-</kw>
-<kw name="Close All Browsers" owner="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-07-25T13:56:33.091025" elapsed="6.195708"/>
-</kw>
-<arg>Blokovat metodu</arg>
-<status status="PASS" start="2024-07-25T13:56:31.694974" elapsed="7.591759"/>
-</kw>
-<status status="PASS" start="2024-07-25T13:55:15.933339" elapsed="83.355651"/>
+<status status="FAIL" start="2024-07-25T14:48:20.756365" elapsed="31.061334">Element 'xpath: //*[contains(text(), "KB Klíč")]' not visible after 7 seconds.</status>
 </test>
-<test id="s1-t6" name="Blokace zařízení (KB ADMIN)" line="219">
-<kw name="Deaktivuj KB Klíč">
-<kw name="Otevři KB Admin">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:39.297409" level="INFO">Opening browser 'chrome' to base url 'https://dev1-caas.kb.cz/'.</msg>
-<arg>https://dev1-caas.kb.cz/</arg>
-<arg>${prohlížeč}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-07-25T13:56:39.296412" elapsed="1.547440"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-07-25T13:56:40.843852" elapsed="0.024075"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:40.868924" level="INFO">Clicking element 'id:details-button'.</msg>
-<arg>id:details-button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:40.867927" elapsed="0.049044"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:40.917968" level="INFO">Clicking element 'id:proceed-link'.</msg>
-<arg>id:proceed-link</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:40.917968" elapsed="0.436966"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:details-button</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:56:41.355970" elapsed="0.251246"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:41.608212" level="INFO">Clicking element 'id:details-button'.</msg>
-<arg>id:details-button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:41.608212" elapsed="0.033663"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:41.642873" level="INFO">Clicking element 'id:proceed-link'.</msg>
-<arg>id:proceed-link</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:41.642873" elapsed="0.718756"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:details-button</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:56:42.361629" elapsed="4.038154"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:46.399783" level="INFO">Clicking element 'id:details-button'.</msg>
-<arg>id:details-button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:46.399783" elapsed="0.038166"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:46.437949" level="INFO">Clicking element 'id:proceed-link'.</msg>
-<arg>id:proceed-link</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:46.437949" elapsed="0.245005"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:userNameInput</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:56:46.682954" elapsed="0.021237"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:46.705189" level="INFO">Typing text 'DSLAB\e_mvysko' into text field 'id:userNameInput'.</msg>
-<arg>id:userNameInput</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:46.704191" elapsed="0.086339"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:46.790530" level="INFO">Clicking element 'id:nextButton'.</msg>
-<arg>id:nextButton</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:46.790530" elapsed="0.036802"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:46.828330" level="INFO">Typing text 'Pr0ject_NemlaZ_0002' into text field 'id:passwordInput'.</msg>
-<arg>id:passwordInput</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:46.828330" elapsed="0.051520"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:46.880804" level="INFO">Clicking element 'id:submitButton'.</msg>
-<arg>id:submitButton</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:46.880804" elapsed="1.115490"/>
-</kw>
-<arg>${browser}</arg>
-<status status="PASS" start="2024-07-25T13:56:39.295612" elapsed="8.700682"/>
-</kw>
-<kw name="Vyhledej Účet">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:query</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:56:47.997323" elapsed="1.861582"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:49.858905" level="INFO">Typing text '2492856974' into text field 'id:query'.</msg>
-<arg>id:query</arg>
-<arg>${identifikační-číslo}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:49.858905" elapsed="0.079941"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:49.938846" level="INFO">Clicking button 'class:btn.btn-primary.btn-icon'.</msg>
-<arg>class:btn.btn-primary.btn-icon</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:49.938846" elapsed="0.061737"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath: //*[contains(text(), "${identifikační-číslo}")]</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:56:50.000583" elapsed="0.255477"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:50.257047" level="INFO">Clicking element 'xpath: //*[contains(text(), "2492856974")]'.</msg>
-<arg>xpath: //*[contains(text(), "${identifikační-číslo}")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:50.256482" elapsed="0.042257"/>
-</kw>
-<arg>${client-ID}</arg>
-<status status="PASS" start="2024-07-25T13:56:47.996294" elapsed="2.302445"/>
-</kw>
-<kw name="Otestuj Akci">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>class:kb-linkbox__inner</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:56:50.299748" elapsed="0.467689"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:50.768569" level="INFO">Clicking element 'class:kb-linkbox__inner'.</msg>
-<arg>class:kb-linkbox__inner</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:50.768405" elapsed="0.036252"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath: //*[contains(text(), "${název-akce}")]</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:56:50.804657" elapsed="0.227193"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:51.032847" level="INFO">Clicking element 'xpath: //*[contains(text(), "Deaktivovat metodu")]'.</msg>
-<arg>xpath: //*[contains(text(), "${název-akce}")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:51.031850" elapsed="0.035560"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:58.254335" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-25.png"&gt;&lt;img src="selenium-screenshot-25.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-07-25T13:56:58.254335" level="FAIL">Element 'class:btn.btn-primary.mt-2' not visible after 7 seconds.</msg>
-<arg>class:btn.btn-primary.mt-2</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2024-07-25T13:56:51.067410" elapsed="7.190823">Element 'class:btn.btn-primary.mt-2' not visible after 7 seconds.</status>
-</kw>
-<arg>SeleniumLibrary.Wait Until Element Is Visible</arg>
-<arg>class:btn.btn-primary.mt-2</arg>
-<arg>7 seconds</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2024-07-25T13:56:51.067410" elapsed="7.191155"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:58.258565" level="INFO">Clicking element 'class:btn.btn-primary.mt-2'.</msg>
-<msg time="2024-07-25T13:56:58.416441" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-26.png"&gt;&lt;img src="selenium-screenshot-26.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-07-25T13:56:58.416441" level="FAIL">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=126.0.6478.183)
-Stacktrace:
-	GetHandleVerifier [0x00007FF7D90EEEB2+31554]
-	(No symbol) [0x00007FF7D9067EE9]
-	(No symbol) [0x00007FF7D8F28559]
-	(No symbol) [0x00007FF7D8F797C2]
-	(No symbol) [0x00007FF7D8F6C151]
-	(No symbol) [0x00007FF7D8F9D02A]
-	(No symbol) [0x00007FF7D8F6BA76]
-	(No symbol) [0x00007FF7D8F9D240]
-	(No symbol) [0x00007FF7D8FBC977]
-	(No symbol) [0x00007FF7D8F9CDD3]
-	(No symbol) [0x00007FF7D8F6A33B]
-	(No symbol) [0x00007FF7D8F6AED1]
-	GetHandleVerifier [0x00007FF7D93F8B2D+3217341]
-	GetHandleVerifier [0x00007FF7D9445AF3+3532675]
-	GetHandleVerifier [0x00007FF7D943B0F0+3489152]
-	GetHandleVerifier [0x00007FF7D919E786+750614]
-	(No symbol) [0x00007FF7D907376F]
-	(No symbol) [0x00007FF7D906EB24]
-	(No symbol) [0x00007FF7D906ECB2]
-	(No symbol) [0x00007FF7D905E17F]
-	BaseThreadInitThunk [0x00007FFE465F7374+20]
-	RtlUserThreadStart [0x00007FFE47F7CC91+33]
-</msg>
-<arg>class:btn.btn-primary.mt-2</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-07-25T13:56:58.258565" elapsed="0.163608">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=126.0.6478.183)
-Stacktrace:
-	GetHandleVerifier [0x00007FF7D90EEEB2+31554]
-	(No symbol) [0x00007FF7D9067EE9]
-	(No symbol) [0x00007FF7D8F28559]
-	(No symbol) [0x00007FF7D8F797C2]
-	(No symbol) [0x00007FF7D8F6C151]
-	(No symbol) [0x00007FF7D8F9D02A]
-	(No symbol) [0x00007FF7D8F6BA76]
-	(No symbol) [0x00007FF7D8F9D240]
-	(No symbol) [0x00007FF7D8FBC977]
-	(No symbol) [0x00007FF7D8F9CDD3]
-	(No symbol) [0x00007FF7D8F6A33B]
-	(No symbol) [0x00007FF7D8F6AED1]
-	GetHandleVerifier [0x00007FF7D93F8B2D+3217341]
-	GetHandleVerifier [0x00007FF7D9445AF3+3532675]
-	GetHandleVerifier [0x00007FF7D943B0F0+3489152]
-	GetHandleVerifier [0x00007FF7D919E786+750614]
-	(No symbol) [0x00007FF7D907376F]
-	(No symbol) [0x00007FF7D906EB24]
-	(No symbol) [0x00007FF7D906ECB2]
-	(No symbol) [0x00007FF7D905E17F]
-	BaseThreadInitThunk [0x00007FFE465F7374+20]
-	RtlUserThreadStart [0x00007FFE47F7CC91+33]
-</status>
-</kw>
-<arg>SeleniumLibrary.Click Element</arg>
-<arg>class:btn.btn-primary.mt-2</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2024-07-25T13:56:58.258565" elapsed="0.163608"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:56:58.422173" elapsed="0.018710"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:58.441880" level="INFO">Clicking element 'xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]'.</msg>
-<arg>xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:58.441880" elapsed="0.030351"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:56:58.473228" level="INFO">Clicking element 'name:bu10453'.</msg>
-<arg>name:bu10453</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:56:58.473228" elapsed="0.033762"/>
-</kw>
-<kw name="Close All Browsers" owner="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-07-25T13:56:58.506990" elapsed="2.132135"/>
-</kw>
-<arg>Deaktivovat metodu</arg>
-<status status="PASS" start="2024-07-25T13:56:50.299748" elapsed="10.339377"/>
-</kw>
-<status status="PASS" start="2024-07-25T13:56:39.294479" elapsed="21.344646"/>
-</kw>
-<kw name="Aktivuj KB Klíč">
-<kw name="Open Application" owner="AppiumLibrary">
-<arg>http://localhost:4723</arg>
-<arg>platformName=Android</arg>
-<arg>deviceName=emulator-5554</arg>
-<arg>appPackage=cz.kb.paat.kbdev1</arg>
-<arg>appActivity=cz.kb.paat.ui.MainActivity</arg>
-<arg>automationName=UiAutomator2</arg>
-<doc>Opens a new application to given Appium server.
-Capabilities of appium server, Android and iOS,
-Please check https://appium.io/docs/en/2.1/cli/args/
-| *Option*            | *Man.* | *Description*     |
-| remote_url          | Yes    | Appium server url |
-| alias               | no     | alias             |
-| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" start="2024-07-25T13:57:00.640629" elapsed="8.135080"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:57:08.778073" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/button_next'.</msg>
-<msg time="2024-07-25T13:57:10.659607" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_next</msg>
-<arg>id=cz.kb.paat.kbdev1:id/button_next</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:57:08.776709" elapsed="1.883894"/>
-</kw>
-<arg>AppiumLibrary.Click Element</arg>
-<arg>id=cz.kb.paat.kbdev1:id/button_next</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2024-07-25T13:57:08.776709" elapsed="1.884207"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:57:10.664681" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/button_next'.</msg>
-<msg time="2024-07-25T13:57:10.853092" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_next</msg>
-<arg>id=cz.kb.paat.kbdev1:id/button_next</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:57:10.661920" elapsed="0.192168"/>
-</kw>
-<arg>AppiumLibrary.Click Element</arg>
-<arg>id=cz.kb.paat.kbdev1:id/button_next</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2024-07-25T13:57:10.660916" elapsed="0.193172"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:57:12.174043" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_manually
-criteria is cz.kb.paat.kbdev1:id/button_manually</msg>
-<arg>id=cz.kb.paat.kbdev1:id/button_manually</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" start="2024-07-25T13:57:10.854088" elapsed="1.320255"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:57:12.176850" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/button_manually'.</msg>
-<msg time="2024-07-25T13:57:12.299725" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_manually</msg>
-<arg>id=cz.kb.paat.kbdev1:id/button_manually</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:57:12.174860" elapsed="0.125864"/>
-</kw>
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:57:12.301771" level="INFO">Opening browser 'chrome' to base url 'https://dev1-caas.kb.cz/'.</msg>
-<arg>https://dev1-caas.kb.cz/</arg>
-<arg>chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-07-25T13:57:12.300724" elapsed="2.390909"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-07-25T13:57:14.692630" elapsed="0.033445"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:57:14.727040" level="INFO">Clicking element 'id:details-button'.</msg>
-<arg>id:details-button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:57:14.726075" elapsed="0.122770"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:57:14.850125" level="INFO">Clicking element 'id:proceed-link'.</msg>
-<arg>id:proceed-link</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:57:14.849844" elapsed="4.764798"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:details-button</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:57:19.615312" elapsed="0.375465"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:57:19.991923" level="INFO">Clicking element 'id:details-button'.</msg>
-<arg>id:details-button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:57:19.990777" elapsed="0.074212"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:57:20.065986" level="INFO">Clicking element 'id:proceed-link'.</msg>
-<arg>id:proceed-link</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:57:20.065986" elapsed="1.013767"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:details-button</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:57:21.079753" elapsed="4.119357"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:57:25.200402" level="INFO">Clicking element 'id:details-button'.</msg>
-<arg>id:details-button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:57:25.199110" elapsed="0.129903"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:57:25.330011" level="INFO">Clicking element 'id:proceed-link'.</msg>
-<arg>id:proceed-link</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:57:25.330011" elapsed="0.376411"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:userNameInput</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:57:25.707415" elapsed="0.094671"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:57:25.803103" level="INFO">Typing text 'DSLAB\e_mvysko' into text field 'id:userNameInput'.</msg>
-<arg>id:userNameInput</arg>
-<arg>DSLAB\\e_mvysko</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:57:25.803103" elapsed="0.195044"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:57:25.999145" level="INFO">Clicking element 'id:nextButton'.</msg>
-<arg>id:nextButton</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:57:25.998147" elapsed="0.086533"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:57:26.085677" level="INFO">Typing text 'Pr0ject_NemlaZ_0002' into text field 'id:passwordInput'.</msg>
-<arg>id:passwordInput</arg>
-<arg>Pr0ject_NemlaZ_0002</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:57:26.085677" elapsed="0.134432"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:57:26.221104" level="INFO">Clicking element 'id:submitButton'.</msg>
-<arg>id:submitButton</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:57:26.220109" elapsed="0.443671"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:query</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:57:26.664293" elapsed="2.720197"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:57:29.385996" level="INFO">Typing text '2492856974' into text field 'id:query'.</msg>
-<arg>id:query</arg>
-<arg>${client-ID}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:57:29.385154" elapsed="0.146705"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:57:29.531859" level="INFO">Clicking button 'class:btn.btn-primary.btn-icon'.</msg>
-<arg>class:btn.btn-primary.btn-icon</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:57:29.531859" elapsed="0.115072"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath: //*[contains(text(), "${client-ID}")]</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:57:29.646931" elapsed="0.254010"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:57:29.902658" level="INFO">Clicking element 'xpath: //*[contains(text(), "2492856974")]'.</msg>
-<arg>xpath: //*[contains(text(), "${client-ID}")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:57:29.901661" elapsed="0.072590"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath: //*[contains(text(), "KB Klíč")]</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:57:29.975174" elapsed="0.547816"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:57:30.524148" level="INFO">Clicking element 'xpath: //*[contains(text(), "KB Klíč")]'.</msg>
-<arg>xpath: //*[contains(text(), "KB Klíč")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:57:30.524148" elapsed="0.089725"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>class:btn.btn-primary</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:57:30.613873" elapsed="0.461221"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:57:31.075094" level="INFO">Clicking element 'class:btn.btn-primary'.</msg>
-<arg>class:btn.btn-primary</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:57:31.075094" elapsed="0.116489"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:57:31.192580" elapsed="0.027362"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:57:31.220939" level="INFO">Clicking element 'xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]'.</msg>
-<arg>xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:57:31.220939" elapsed="0.051893"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:57:31.273830" level="INFO">Clicking element 'class:btn.btn-primary'.</msg>
-<arg>class:btn.btn-primary</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:57:31.273830" elapsed="0.056953"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath=(//strong[contains(@class, 'kb-h-semibold') and contains(@class, 'kb-h-font--bigger')])[2]</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:57:31.331784" elapsed="0.676330"/>
-</kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:57:32.041790" level="INFO">${OTP1} = 198067476</msg>
-<var>${OTP1}</var>
-<arg>xpath=(//strong[contains(@class, 'kb-h-semibold') and contains(@class, 'kb-h-font--bigger')])[2]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:57:32.009279" elapsed="0.033509"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:57:32.044807" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/edt_username'.</msg>
-<msg time="2024-07-25T13:57:32.230498" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_username</msg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_username</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:57:32.042788" elapsed="0.188704"/>
-</kw>
-<kw name="Input Text" owner="AppiumLibrary">
-<msg time="2024-07-25T13:57:32.234940" level="INFO">Typing text '2492856974' into text field 'id=cz.kb.paat.kbdev1:id/edt_username'</msg>
-<msg time="2024-07-25T13:57:32.904792" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_username</msg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_username</arg>
-<arg>${client-ID}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:57:32.231492" elapsed="0.673814"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:57:32.907966" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/edt_activation_code'.</msg>
-<msg time="2024-07-25T13:57:34.522767" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_activation_code</msg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_activation_code</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:57:32.905819" elapsed="1.616948"/>
-</kw>
-<kw name="Input Text" owner="AppiumLibrary">
-<msg time="2024-07-25T13:57:34.525288" level="INFO">Typing text '198067476' into text field 'id=cz.kb.paat.kbdev1:id/edt_activation_code'</msg>
-<msg time="2024-07-25T13:57:34.651976" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_activation_code</msg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_activation_code</arg>
-<arg>${OTP1}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:57:34.523764" elapsed="0.128212"/>
-</kw>
-<kw name="Hide Keyboard" owner="AppiumLibrary">
-<doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press
-a particular key, ex. `Done`. In Android, no parameters are used.</doc>
-<status status="PASS" start="2024-07-25T13:57:34.652885" elapsed="1.395321"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:57:36.051204" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/button_next'.</msg>
-<msg time="2024-07-25T13:57:36.263851" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_next</msg>
-<arg>id=cz.kb.paat.kbdev1:id/button_next</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:57:36.049210" elapsed="0.214641"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-07-25T13:57:46.265164" level="INFO">Slept 10 seconds.</msg>
-<arg>10 seconds</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-07-25T13:57:36.263851" elapsed="10.001313"/>
-</kw>
-<kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:57:46.265754" level="INFO">Opening url 'https://dev1-caas.kb.cz/otptestaccess'</msg>
-<arg>https://dev1-caas.kb.cz/otptestaccess</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-07-25T13:57:46.265681" elapsed="0.503412"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>class:btn.btn-secondary</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:57:46.770213" elapsed="0.032978"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:57:46.803191" level="INFO">Clicking element 'class:btn.btn-secondary'.</msg>
-<arg>class:btn.btn-secondary</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:57:46.803191" elapsed="0.064965"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath: //*[contains(text(), "${client-ID}")]</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:57:46.868156" elapsed="0.456632"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:57:47.325745" level="INFO">Clicking element 'xpath: //*[contains(text(), "2492856974")]'.</msg>
-<arg>xpath: //*[contains(text(), "${client-ID}")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:57:47.325305" elapsed="0.059649"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>class:form-control-static</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:57:47.384954" elapsed="0.234866"/>
-</kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:57:47.643227" level="INFO">${OTP2} = 861311 Copy OTP</msg>
-<var>${OTP2}</var>
-<arg>xpath=(//p[contains(@class, 'form-control-static')])[6]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:57:47.619820" elapsed="0.024549"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:57:47.645226" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/edt_verification_code'.</msg>
-<msg time="2024-07-25T13:57:47.803944" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_verification_code</msg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_verification_code</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:57:47.644369" elapsed="0.159840"/>
-</kw>
-<kw name="Input Text" owner="AppiumLibrary">
-<msg time="2024-07-25T13:57:47.806231" level="INFO">Typing text '861311 Copy OTP' into text field 'id=cz.kb.paat.kbdev1:id/edt_verification_code'</msg>
-<msg time="2024-07-25T13:57:48.936746" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_verification_code</msg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_verification_code</arg>
-<arg>${OTP2}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:57:47.804209" elapsed="1.132996"/>
-</kw>
-<kw name="Hide Keyboard" owner="AppiumLibrary">
-<doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press
-a particular key, ex. `Done`. In Android, no parameters are used.</doc>
-<status status="PASS" start="2024-07-25T13:57:48.937205" elapsed="1.439013"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:57:50.379212" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/button_next'.</msg>
-<msg time="2024-07-25T13:57:50.541050" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_next</msg>
-<arg>id=cz.kb.paat.kbdev1:id/button_next</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:57:50.377295" elapsed="0.163755"/>
-</kw>
-<kw name="Generate Random String" owner="String">
-<msg time="2024-07-25T13:57:50.541971" level="INFO">${client-username} = eXbErgJ</msg>
-<var>${client-username}</var>
-<arg>7</arg>
-<arg>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</arg>
-<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<status status="PASS" start="2024-07-25T13:57:50.541971" elapsed="0.000998"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<kw name="Capture Page Screenshot">
-<msg time="2024-07-25T13:57:55.618895" level="FAIL">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</msg>
-<status status="FAIL" start="2024-07-25T13:57:55.618895" elapsed="0.000000">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</status>
-</kw>
-<msg time="2024-07-25T13:57:55.620577" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</msg>
-<msg time="2024-07-25T13:57:55.621428" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_nickname
-criteria is cz.kb.paat.kbdev1:id/edt_nickname
-criteria is cz.kb.paat.kbdev1:id/edt_nickname
-criteria is cz.kb.paat.kbdev1:id/edt_nickname
-criteria is cz.kb.paat.kbdev1:id/edt_nickname
-criteria is cz.kb.paat.kbdev1:id/edt_nickname
-criteria is cz.kb.paat.kbdev1:id/edt_nickname
-criteria is cz.kb.paat.kbdev1:id/edt_nickname
-criteria is cz.kb.paat.kbdev1:id/edt_nickname
-criteria is cz.kb.paat.kbdev1:id/edt_nickname
-criteria is cz.kb.paat.kbdev1:id/edt_nickname
-criteria is cz.kb.paat.kbdev1:id/edt_nickname
-criteria is cz.kb.paat.kbdev1:id/edt_nickname
-criteria is cz.kb.paat.kbdev1:id/edt_nickname
-criteria is cz.kb.paat.kbdev1:id/edt_nickname
-criteria is cz.kb.paat.kbdev1:id/edt_nickname</msg>
-<msg time="2024-07-25T13:57:55.622273" level="FAIL">Element locator 'id=cz.kb.paat.kbdev1:id/edt_nickname' did not match any elements after 5 seconds</msg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_nickname</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="FAIL" start="2024-07-25T13:57:50.543513" elapsed="5.079784">Element locator 'id=cz.kb.paat.kbdev1:id/edt_nickname' did not match any elements after 5 seconds</status>
-</kw>
-<arg>AppiumLibrary.Wait Until Element Is Visible</arg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_nickname</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2024-07-25T13:57:50.542969" elapsed="5.080328"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Input Text" owner="AppiumLibrary">
-<msg time="2024-07-25T13:57:55.625260" level="INFO">Typing text 'eXbErgJ' into text field 'id=cz.kb.paat.kbdev1:id/edt_nickname'</msg>
-<kw name="Capture Page Screenshot">
-<msg time="2024-07-25T13:57:55.699539" level="FAIL">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</msg>
-<status status="FAIL" start="2024-07-25T13:57:55.699539" elapsed="0.000000">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</status>
-</kw>
-<msg time="2024-07-25T13:57:55.700566" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</msg>
-<msg time="2024-07-25T13:57:55.701534" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_nickname</msg>
-<msg time="2024-07-25T13:57:55.701534" level="FAIL">ValueError: Element locator 'id=cz.kb.paat.kbdev1:id/edt_nickname' did not match any elements.</msg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_nickname</arg>
-<arg>${client-username}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="FAIL" start="2024-07-25T13:57:55.623297" elapsed="0.079539">ValueError: Element locator 'id=cz.kb.paat.kbdev1:id/edt_nickname' did not match any elements.</status>
-</kw>
-<arg>AppiumLibrary.Input Text</arg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_nickname</arg>
-<arg>${client-username}</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2024-07-25T13:57:55.623297" elapsed="0.079539"/>
-</kw>
-<kw name="Hide Keyboard" owner="AppiumLibrary">
-<doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press
-a particular key, ex. `Done`. In Android, no parameters are used.</doc>
-<status status="PASS" start="2024-07-25T13:57:55.703587" elapsed="0.272442"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:57:55.977928" level="INFO">Clicking element 'cz.kb.paat.kbdev1:id/button_next'.</msg>
-<msg time="2024-07-25T13:57:56.688018" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_next</msg>
-<arg>cz.kb.paat.kbdev1:id/button_next</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:57:55.976932" elapsed="0.711086"/>
-</kw>
-<arg>AppiumLibrary.Click Element</arg>
-<arg>cz.kb.paat.kbdev1:id/button_next</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2024-07-25T13:57:55.976932" elapsed="0.711086"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2024-07-25T13:57:56.731129" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_new_password</msg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_new_password</arg>
-<arg>7 seconds</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:57:56.688563" elapsed="0.042566"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:57:56.732126" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/edt_new_password'.</msg>
-<msg time="2024-07-25T13:57:57.706354" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_new_password</msg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_new_password</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:57:56.731129" elapsed="0.976108"/>
-</kw>
-<kw name="Input Text" owner="AppiumLibrary">
-<msg time="2024-07-25T13:57:57.709635" level="INFO">Typing text '147321' into text field 'id=cz.kb.paat.kbdev1:id/edt_new_password'</msg>
-<msg time="2024-07-25T13:57:57.773614" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_new_password</msg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_new_password</arg>
-<arg>147321</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:57:57.707237" elapsed="0.066377"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:57:57.774609" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/edt_new_password2'.</msg>
-<msg time="2024-07-25T13:57:59.239265" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_new_password2</msg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_new_password2</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:57:57.773614" elapsed="1.465651"/>
-</kw>
-<kw name="Input Text" owner="AppiumLibrary">
-<msg time="2024-07-25T13:57:59.241717" level="INFO">Typing text '147321' into text field 'id=cz.kb.paat.kbdev1:id/edt_new_password2'</msg>
-<msg time="2024-07-25T13:57:59.313385" level="INFO">criteria is cz.kb.paat.kbdev1:id/edt_new_password2</msg>
-<arg>id=cz.kb.paat.kbdev1:id/edt_new_password2</arg>
-<arg>147321</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:57:59.240700" elapsed="0.072685"/>
-</kw>
-<kw name="Hide Keyboard" owner="AppiumLibrary">
-<doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press
-a particular key, ex. `Done`. In Android, no parameters are used.</doc>
-<status status="PASS" start="2024-07-25T13:57:59.313385" elapsed="0.726392"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2024-07-25T13:58:01.004157" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_next</msg>
-<arg>id=cz.kb.paat.kbdev1:id/button_next</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:58:00.039777" elapsed="0.964380"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-07-25T13:58:01.005162" level="INFO">Clicking element 'id=cz.kb.paat.kbdev1:id/button_next'.</msg>
-<msg time="2024-07-25T13:58:01.706997" level="INFO">criteria is cz.kb.paat.kbdev1:id/button_next</msg>
-<arg>id=cz.kb.paat.kbdev1:id/button_next</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-07-25T13:58:01.004157" elapsed="0.703836"/>
-</kw>
-<kw name="Close Application" owner="AppiumLibrary">
-<doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" start="2024-07-25T13:58:01.707993" elapsed="0.477170"/>
-</kw>
-<kw name="Close All Browsers" owner="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-07-25T13:58:02.185897" elapsed="6.347821"/>
-</kw>
-<status status="PASS" start="2024-07-25T13:57:00.639634" elapsed="67.894084"/>
-</kw>
-<kw name="Otevři KB Admin">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:08.537684" level="INFO">Opening browser 'chrome' to base url 'https://dev1-caas.kb.cz/'.</msg>
-<arg>https://dev1-caas.kb.cz/</arg>
-<arg>${prohlížeč}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-07-25T13:58:08.536687" elapsed="1.574421"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-07-25T13:58:10.111108" elapsed="0.020615"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:10.132720" level="INFO">Clicking element 'id:details-button'.</msg>
-<arg>id:details-button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:10.132720" elapsed="0.054185"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:10.186905" level="INFO">Clicking element 'id:proceed-link'.</msg>
-<arg>id:proceed-link</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:10.186905" elapsed="0.455166"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:details-button</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:58:10.643069" elapsed="0.253241"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:10.896310" level="INFO">Clicking element 'id:details-button'.</msg>
-<arg>id:details-button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:10.896310" elapsed="0.037212"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:10.934521" level="INFO">Clicking element 'id:proceed-link'.</msg>
-<arg>id:proceed-link</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:10.934521" elapsed="0.836226"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:details-button</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:58:11.771743" elapsed="4.031249"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:15.802992" level="INFO">Clicking element 'id:details-button'.</msg>
-<arg>id:details-button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:15.802992" elapsed="0.038050"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:15.842039" level="INFO">Clicking element 'id:proceed-link'.</msg>
-<arg>id:proceed-link</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:15.842039" elapsed="0.336741"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:userNameInput</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:58:16.178780" elapsed="0.024934"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:16.204712" level="INFO">Typing text 'DSLAB\e_mvysko' into text field 'id:userNameInput'.</msg>
-<arg>id:userNameInput</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:16.204712" elapsed="0.079032"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:16.283744" level="INFO">Clicking element 'id:nextButton'.</msg>
-<arg>id:nextButton</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:16.283744" elapsed="0.038214"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:16.322244" level="INFO">Typing text 'Pr0ject_NemlaZ_0002' into text field 'id:passwordInput'.</msg>
-<arg>id:passwordInput</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:16.322244" elapsed="0.055366"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:16.377610" level="INFO">Clicking element 'id:submitButton'.</msg>
-<arg>id:submitButton</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:16.377610" elapsed="0.722397"/>
-</kw>
-<arg>${browser}</arg>
-<status status="PASS" start="2024-07-25T13:58:08.535690" elapsed="8.564317"/>
-</kw>
-<kw name="Vyhledej Účet">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:query</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:58:17.101093" elapsed="1.881690"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:18.983779" level="INFO">Typing text '2492856974' into text field 'id:query'.</msg>
-<arg>id:query</arg>
-<arg>${identifikační-číslo}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:18.983779" elapsed="0.060660"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:19.044439" level="INFO">Clicking button 'class:btn.btn-primary.btn-icon'.</msg>
-<arg>class:btn.btn-primary.btn-icon</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:19.044439" elapsed="0.053661"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath: //*[contains(text(), "${identifikační-číslo}")]</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:58:19.098100" elapsed="0.232041"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:19.330141" level="INFO">Clicking element 'xpath: //*[contains(text(), "2492856974")]'.</msg>
-<arg>xpath: //*[contains(text(), "${identifikační-číslo}")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:19.330141" elapsed="0.037860"/>
-</kw>
-<arg>${client-ID}</arg>
-<status status="PASS" start="2024-07-25T13:58:17.101093" elapsed="2.267509"/>
-</kw>
-<kw name="Otestuj Akci">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>class:kb-linkbox__inner</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:58:19.368974" elapsed="0.437422"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:19.806396" level="INFO">Clicking element 'class:kb-linkbox__inner'.</msg>
-<arg>class:kb-linkbox__inner</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:19.806396" elapsed="0.036000"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath: //*[contains(text(), "${název-akce}")]</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:58:19.843394" elapsed="0.226762"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:20.070156" level="INFO">Clicking element 'xpath: //*[contains(text(), "Blokovat")]'.</msg>
-<arg>xpath: //*[contains(text(), "${název-akce}")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:20.070156" elapsed="0.039321"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>class:btn.btn-primary.mt-2</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:58:20.109477" elapsed="0.467484"/>
-</kw>
-<arg>SeleniumLibrary.Wait Until Element Is Visible</arg>
-<arg>class:btn.btn-primary.mt-2</arg>
-<arg>7 seconds</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2024-07-25T13:58:20.109477" elapsed="0.467484"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:20.576961" level="INFO">Clicking element 'class:btn.btn-primary.mt-2'.</msg>
-<arg>class:btn.btn-primary.mt-2</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:20.576961" elapsed="0.036505"/>
-</kw>
-<arg>SeleniumLibrary.Click Element</arg>
-<arg>class:btn.btn-primary.mt-2</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2024-07-25T13:58:20.576961" elapsed="0.036505"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:58:20.614520" elapsed="0.017675"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:20.633193" level="INFO">Clicking element 'xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]'.</msg>
-<arg>xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:20.632195" elapsed="0.032959"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:20.665154" level="INFO">Clicking element 'name:bu10453'.</msg>
-<arg>name:bu10453</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:20.665154" elapsed="0.034920"/>
-</kw>
-<kw name="Close All Browsers" owner="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-07-25T13:58:20.700074" elapsed="6.231925"/>
-</kw>
-<arg>Blokovat</arg>
-<status status="PASS" start="2024-07-25T13:58:19.368974" elapsed="7.563025"/>
-</kw>
-<status status="PASS" start="2024-07-25T13:56:39.292356" elapsed="107.641587"/>
-</test>
-<test id="s1-t7" name="Odebrání zařízení (KB ADMIN)" line="225">
-<kw name="Otevři KB Admin">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:26.941543" level="INFO">Opening browser 'chrome' to base url 'https://dev1-caas.kb.cz/'.</msg>
-<arg>https://dev1-caas.kb.cz/</arg>
-<arg>${prohlížeč}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-07-25T13:58:26.940612" elapsed="1.744810"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-07-25T13:58:28.685422" elapsed="0.035268"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:28.720690" level="INFO">Clicking element 'id:details-button'.</msg>
-<arg>id:details-button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:28.720690" elapsed="0.050073"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:28.770763" level="INFO">Clicking element 'id:proceed-link'.</msg>
-<arg>id:proceed-link</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:28.770763" elapsed="0.810293"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:details-button</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:58:29.581056" elapsed="0.494409"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:30.075465" level="INFO">Clicking element 'id:details-button'.</msg>
-<arg>id:details-button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:30.075465" elapsed="0.038638"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:30.115101" level="INFO">Clicking element 'id:proceed-link'.</msg>
-<arg>id:proceed-link</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:30.114103" elapsed="1.342215"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:details-button</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:58:31.456318" elapsed="4.144778"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:35.602136" level="INFO">Clicking element 'id:details-button'.</msg>
-<arg>id:details-button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:35.601096" elapsed="0.036313"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:35.637409" level="INFO">Clicking element 'id:proceed-link'.</msg>
-<arg>id:proceed-link</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:35.637409" elapsed="0.261885"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:userNameInput</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:58:35.899294" elapsed="0.028516"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:35.927810" level="INFO">Typing text 'DSLAB\e_mvysko' into text field 'id:userNameInput'.</msg>
-<arg>id:userNameInput</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:35.927810" elapsed="0.081490"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:36.009300" level="INFO">Clicking element 'id:nextButton'.</msg>
-<arg>id:nextButton</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:36.009300" elapsed="0.036538"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:36.045838" level="INFO">Typing text 'Pr0ject_NemlaZ_0002' into text field 'id:passwordInput'.</msg>
-<arg>id:passwordInput</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:36.045838" elapsed="0.052385"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:36.098223" level="INFO">Clicking element 'id:submitButton'.</msg>
-<arg>id:submitButton</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:36.098223" elapsed="0.782464"/>
-</kw>
-<arg>${browser}</arg>
-<status status="PASS" start="2024-07-25T13:58:26.939929" elapsed="9.940758"/>
-</kw>
-<kw name="Vyhledej Účet">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:query</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:58:36.881646" elapsed="1.773824"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:38.656548" level="INFO">Typing text '2492856974' into text field 'id:query'.</msg>
-<arg>id:query</arg>
-<arg>${identifikační-číslo}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:38.656548" elapsed="0.060081"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:38.716629" level="INFO">Clicking button 'class:btn.btn-primary.btn-icon'.</msg>
-<arg>class:btn.btn-primary.btn-icon</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:38.716629" elapsed="0.048144"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath: //*[contains(text(), "${identifikační-číslo}")]</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:58:38.765771" elapsed="0.252481"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:39.018252" level="INFO">Clicking element 'xpath: //*[contains(text(), "2492856974")]'.</msg>
-<arg>xpath: //*[contains(text(), "${identifikační-číslo}")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:39.018252" elapsed="0.040606"/>
-</kw>
-<arg>${client-ID}</arg>
-<status status="PASS" start="2024-07-25T13:58:36.881646" elapsed="2.178300"/>
-</kw>
-<kw name="Otestuj Akci">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>class:kb-linkbox__inner</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:58:39.060456" elapsed="0.451588"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:39.513047" level="INFO">Clicking element 'class:kb-linkbox__inner'.</msg>
-<arg>class:kb-linkbox__inner</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:39.512044" elapsed="0.035216"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath: //*[contains(text(), "${název-akce}")]</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:58:39.547260" elapsed="0.228499"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:39.776757" level="INFO">Clicking element 'xpath: //*[contains(text(), "Odebrat")]'.</msg>
-<arg>xpath: //*[contains(text(), "${název-akce}")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:39.775759" elapsed="0.037894"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:47.002984" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-27.png"&gt;&lt;img src="selenium-screenshot-27.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-07-25T13:58:47.002984" level="FAIL">Element 'class:btn.btn-primary.mt-2' not visible after 7 seconds.</msg>
-<arg>class:btn.btn-primary.mt-2</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2024-07-25T13:58:39.814650" elapsed="7.189467">Element 'class:btn.btn-primary.mt-2' not visible after 7 seconds.</status>
-</kw>
-<arg>SeleniumLibrary.Wait Until Element Is Visible</arg>
-<arg>class:btn.btn-primary.mt-2</arg>
-<arg>7 seconds</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2024-07-25T13:58:39.813653" elapsed="7.190464"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:47.005082" level="INFO">Clicking element 'class:btn.btn-primary.mt-2'.</msg>
-<msg time="2024-07-25T13:58:47.189904" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-28.png"&gt;&lt;img src="selenium-screenshot-28.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-07-25T13:58:47.189904" level="FAIL">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=126.0.6478.183)
-Stacktrace:
-	GetHandleVerifier [0x00007FF7D90EEEB2+31554]
-	(No symbol) [0x00007FF7D9067EE9]
-	(No symbol) [0x00007FF7D8F28559]
-	(No symbol) [0x00007FF7D8F797C2]
-	(No symbol) [0x00007FF7D8F6C151]
-	(No symbol) [0x00007FF7D8F9D02A]
-	(No symbol) [0x00007FF7D8F6BA76]
-	(No symbol) [0x00007FF7D8F9D240]
-	(No symbol) [0x00007FF7D8FBC977]
-	(No symbol) [0x00007FF7D8F9CDD3]
-	(No symbol) [0x00007FF7D8F6A33B]
-	(No symbol) [0x00007FF7D8F6AED1]
-	GetHandleVerifier [0x00007FF7D93F8B2D+3217341]
-	GetHandleVerifier [0x00007FF7D9445AF3+3532675]
-	GetHandleVerifier [0x00007FF7D943B0F0+3489152]
-	GetHandleVerifier [0x00007FF7D919E786+750614]
-	(No symbol) [0x00007FF7D907376F]
-	(No symbol) [0x00007FF7D906EB24]
-	(No symbol) [0x00007FF7D906ECB2]
-	(No symbol) [0x00007FF7D905E17F]
-	BaseThreadInitThunk [0x00007FFE465F7374+20]
-	RtlUserThreadStart [0x00007FFE47F7CC91+33]
-</msg>
-<arg>class:btn.btn-primary.mt-2</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-07-25T13:58:47.004117" elapsed="0.186776">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=126.0.6478.183)
-Stacktrace:
-	GetHandleVerifier [0x00007FF7D90EEEB2+31554]
-	(No symbol) [0x00007FF7D9067EE9]
-	(No symbol) [0x00007FF7D8F28559]
-	(No symbol) [0x00007FF7D8F797C2]
-	(No symbol) [0x00007FF7D8F6C151]
-	(No symbol) [0x00007FF7D8F9D02A]
-	(No symbol) [0x00007FF7D8F6BA76]
-	(No symbol) [0x00007FF7D8F9D240]
-	(No symbol) [0x00007FF7D8FBC977]
-	(No symbol) [0x00007FF7D8F9CDD3]
-	(No symbol) [0x00007FF7D8F6A33B]
-	(No symbol) [0x00007FF7D8F6AED1]
-	GetHandleVerifier [0x00007FF7D93F8B2D+3217341]
-	GetHandleVerifier [0x00007FF7D9445AF3+3532675]
-	GetHandleVerifier [0x00007FF7D943B0F0+3489152]
-	GetHandleVerifier [0x00007FF7D919E786+750614]
-	(No symbol) [0x00007FF7D907376F]
-	(No symbol) [0x00007FF7D906EB24]
-	(No symbol) [0x00007FF7D906ECB2]
-	(No symbol) [0x00007FF7D905E17F]
-	BaseThreadInitThunk [0x00007FFE465F7374+20]
-	RtlUserThreadStart [0x00007FFE47F7CC91+33]
-</status>
-</kw>
-<arg>SeleniumLibrary.Click Element</arg>
-<arg>class:btn.btn-primary.mt-2</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2024-07-25T13:58:47.004117" elapsed="0.186776"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]</arg>
-<arg>7 seconds</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-25T13:58:47.191893" elapsed="0.016539"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:47.208432" level="INFO">Clicking element 'xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]'.</msg>
-<arg>xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:47.208432" elapsed="0.028922"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-25T13:58:47.238520" level="INFO">Clicking element 'name:bu10453'.</msg>
-<arg>name:bu10453</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-25T13:58:47.238352" elapsed="0.033398"/>
-</kw>
-<kw name="Close All Browsers" owner="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-07-25T13:58:47.271750" elapsed="2.138826"/>
-</kw>
-<arg>Odebrat</arg>
-<status status="PASS" start="2024-07-25T13:58:39.060456" elapsed="10.351166"/>
-</kw>
-<status status="PASS" start="2024-07-25T13:58:26.937419" elapsed="22.475156"/>
-</test>
-<status status="PASS" start="2024-07-25T13:53:20.634403" elapsed="328.783153"/>
+<status status="FAIL" start="2024-07-25T14:48:20.460413" elapsed="31.391191"/>
 </suite>
 <statistics>
 <total>
-<stat pass="7" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="7" fail="0" skip="0" id="s1" name="KB-Admin-Alt">KB-Admin-Alt</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="KB-Admin-Alt">KB-Admin-Alt</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-07-25T13:56:07.194176" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</msg>
-<msg time="2024-07-25T13:56:07.259990" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</msg>
-<msg time="2024-07-25T13:57:55.620577" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</msg>
-<msg time="2024-07-25T13:57:55.700566" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</msg>
 </errors>
 </robot>

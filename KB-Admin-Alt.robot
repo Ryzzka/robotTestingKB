@@ -119,8 +119,6 @@ Aktivuj KB Klíč
     AppiumLibrary.Click Element    id=cz.kb.paat.kbdev1:id/button_next
     Close Application
     Close All Browsers
-Aktivuj Bezpečnostní heslo
-    SeleniumLibrary.Wait For Condition    condition
 Deaktivuj KB Klíč
     Otevři KB Admin    ${browser}
     Vyhledej Účet    ${client-ID}
@@ -206,7 +204,7 @@ Aktivace BH(KB ADMIN)
         Aktivuj KB Klíč
         Otevři KB Admin    ${browser}
         Vyhledej Účet    ${client-ID}
-        Otestuj Akci    
+        Otestuj Akci     Bezpečnostní heslo  
 
 Sjednání Smlouvy
     Sjednej Smlouvu
@@ -233,4 +231,4 @@ Blokace zařízení (KB ADMIN)
 Odebrání zařízení (KB ADMIN)
     Otevři KB Admin    ${browser}
     Vyhledej Účet    ${client-ID}
-    Otestuj Akci    Odebrat
+       
