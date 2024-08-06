@@ -274,4 +274,4 @@ Přihlášení do Můj Profil
     SeleniumLibrary.Input Text    id:otp    ${OTP2}
     SeleniumLibrary.Click Element    xpath: //*[contains(text(), "Potvrdit")]
     Unselect Frame
-    Sleep    5 seconds
+    Sleep    4 seconds
