@@ -9,11 +9,9 @@ ${client-ID}
 ${username}    DSLAB\\e_mvysko
 ${password}    Pr0ject_NemlaZ_0002
 ${browser}    chrome
-
 *** Keywords ***
 Otevři KB Admin
-    [Arguments]    ${prohlížeč}
-    Open Browser    https://dev1-caas.kb.cz/    ${prohlížeč}
+    Open Chrome With Disabled Search Engine Choice Screen   https://dev1-caas.kb.cz/    
     Maximize Browser Window
     SeleniumLibrary.Click Element    id:details-button
     SeleniumLibrary.Click Element    id:proceed-link
@@ -28,15 +26,19 @@ Otevři KB Admin
     SeleniumLibrary.Click Element    id:nextButton
     SeleniumLibrary.Input Text    id:passwordInput    ${password}
     SeleniumLibrary.Click Element    id:submitButton
+Otevři Můj Profil - login page
+    Open Chrome With Disabled Search Engine Choice Screen - incognito    https://dev1-login.kb.cz/
+    Maximize Browser Window
+    Handshake
 Vyhledej Účet
     [Arguments]    ${identifikační-číslo}
     SeleniumLibrary.Wait Until Element Is Visible    id:query    7 seconds
     SeleniumLibrary.Input Text    id:query   ${identifikační-číslo}
-    SeleniumLibrary.Click Button     class:btn.btn-primary.btn-icon
+    SeleniumLibrary.Click Button     class:btn.btn-primary.btn-icon      
     SeleniumLibrary.Wait Until Element Is Visible    xpath: //*[contains(text(), "${identifikační-číslo}")]    7 seconds
     SeleniumLibrary.Click Element    xpath: //*[contains(text(), "${identifikační-číslo}")]
 Sjednej Smlouvu
-    Otevři KB Admin    ${browser}
+    Otevři KB Admin    
     Vyhledej Účet    ${client-ID}
     SeleniumLibrary.Wait Until Element Is Visible    xpath: //*[contains(text(), "Sjednat")]    7 seconds
     SeleniumLibrary.Click Element    xpath: //*[contains(text(), "Sjednat")]
@@ -59,14 +61,7 @@ Aktivuj KB Klíč
     AppiumLibrary.Click Element    id=cz.kb.paat.kbdev1:id/button_manually
     Open Browser    https://dev1-caas.kb.cz/    chrome
     Maximize Browser Window
-    SeleniumLibrary.Click Element    id:details-button
-    SeleniumLibrary.Click Element    id:proceed-link
-    SeleniumLibrary.Wait Until Element Is Visible    id:details-button    7 seconds
-    SeleniumLibrary.Click Element    id:details-button
-    SeleniumLibrary.Click Element    id:proceed-link
-    SeleniumLibrary.Wait Until Element Is Visible    id:details-button    7 seconds
-    SeleniumLibrary.Click Element    id:details-button
-    SeleniumLibrary.Click Element    id:proceed-link
+    Handshake
     SeleniumLibrary.Wait Until Element Is Visible    id:userNameInput    7 seconds
     SeleniumLibrary.Input Text    id:userNameInput    DSLAB\\e_mvysko
     SeleniumLibrary.Click Element    id:nextButton
@@ -120,9 +115,15 @@ Aktivuj KB Klíč
     Close Application
     Close All Browsers
 Deaktivuj KB Klíč
-    Otevři KB Admin    ${browser}
+    Otevři KB Admin    
     Vyhledej Účet    ${client-ID}
     Otestuj Akci    Deaktivovat metodu
+Element Click
+    [Arguments]    ${locator}    ${library}
+    Run Keyword If    '${library}' == 'SeleniumLibrary'    SeleniumLibrary.Wait Until Element Is Visible    ${locator}    10 seconds
+    ...    ELSE IF    '${library}' == 'AppiumLibrary'    AppiumLibrary.Wait Until Element Is Visible    ${locator}    10 seconds
+    Run Keyword If    '${library}' == 'SeleniumLibrary'    SeleniumLibrary.Click Element    ${locator}
+    ...    ELSE IF    '${library}' == 'AppiumLibrary'    AppiumLibrary.Click Element    ${locator}
 Otestuj Akci
     [Arguments]    ${název-akce}
     SeleniumLibrary.Wait Until Element Is Visible    class:kb-linkbox__inner    7 seconds
@@ -135,10 +136,60 @@ Otestuj Akci
     SeleniumLibrary.Click Element    xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]
     SeleniumLibrary.Click Element    name:bu10453
     Close All Browsers
-*** Test Cases ***
-#TO DO: ZJISTIT, JESTLI JE VYGENEROVANÝ STRING SKUTEČNĚ ORIGINÁLNÍ - done
+Podepsání Smlouvy
+    SeleniumLibrary.Wait Until Element Is Visible   class:kb-linkbox__inner 
+    SeleniumLibrary.Click Element    xpath: //*[contains(text(), "Bezpečnostní heslo")]
+    SeleniumLibrary.Wait Until Element Is Enabled    id:signed
+    SeleniumLibrary.Click Element    class:btn.btn-primary
+    SeleniumLibrary.Wait Until Element Is Visible    xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]    7 seconds
+    SeleniumLibrary.Click Element    xpath=//*[contains(text(), "Dokument byl podepsán klientem.")]
+    SeleniumLibrary.Wait Until Element Is Visible    xpath: //*[contains(text(), "Zpracovat")]    7 seconds
+    SeleniumLibrary.Click Element    xpath=//*[contains(text(), "Zpracovat")]
+Aktivuj BH - ADMIN
+    [Arguments]    ${client-ID}
+    Otevři KB Admin   
+    Vyhledej Účet    ${client-id}
+    Podepsání smlouvy
+    SeleniumLibrary.Wait Until Element Is Visible    xpath=(//strong[contains(@class, 'kb-h-semibold') and contains(@class, 'kb-h-font--bigger')])[2]
+    ${unique-code}    SeleniumLibrary.Get Text    xpath=(//strong[contains(@class, 'kb-h-semibold') and contains(@class, 'kb-h-font--bigger')])[2]
+    Close Browser   
+    Otevři Můj Profil - login page
+    SeleniumLibrary.Wait Until Element Is Visible    id=login    5 seconds
+    Select Frame    id=login
+    Sleep    1 seconds
+    SeleniumLibrary.Wait Until Element Is Visible    xpath=//*[@id="name"]
+    SeleniumLibrary.Input Text    xpath=//*[@id="name"]    ${client-ID}
+    SeleniumLibrary.Wait Until Element Is Visible    xpath=//*[contains(text(), "Pokračovat")] 
+    SeleniumLibrary.Click Element    xpath=//*[contains(text(), "Pokračovat")]
+    SeleniumLibrary.Wait Until Element Is Visible    xpath=//*[@id="otp"]
+    SeleniumLibrary.Input Text    xpath=//*[@id="otp"]    ${unique-code}
+    SeleniumLibrary.Wait Until Element Is Visible    xpath=//*[contains(text(), "Potvrdit")]
+    SeleniumLibrary.Click Element    xpath=//*[contains(text(), "Potvrdit")]
+    Unselect Frame
+    Execute JavaScript    window.open('https://dev1-caas.kb.cz/otptestaccess', '_blank');
+    Switch Window    url=https://dev1-caas.kb.cz/otptestaccess
+    SeleniumLibrary.Click Element    id:details-button
+    SeleniumLibrary.Click Element    id:proceed-link
+    SeleniumLibrary.Wait Until Element Is Visible    class:btn.btn-secondary
+    Element Click    class:btn.btn-secondary    SeleniumLibrary
+    Element Click    xpath: //*[contains(text(), "${client-ID}")]    SeleniumLibrary
+    SeleniumLibrary.Wait Until Element Is Visible    class:form-control-static
+    ${OTP2}=      SeleniumLibrary.Get Text    xpath=/html/body/caas-test-otp-access-app/div/sa-otp-detail/div[2]/div[6]/div/p
+    ${OTP2}=    Set Variable    ${OTP2}[0:6]
+    Switch Window    url=https://dev1-mujprofil.kb.cz/self-service/login
+    Select Frame    id=login
+    Sleep    500 milliseconds
+    SeleniumLibrary.Input Text    id:otp    ${OTP2}
+    SeleniumLibrary.Click Element    xpath: //*[contains(text(), "Potvrdit")]
+    Unselect Frame
+    ${client-username}    Generate random string    7    ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+    Sleep    1000 seconds
+    SeleniumLibrary.Wait Until Element Is Visible    xpath=//*[@id="userName"]
+    SeleniumLibrary.Input Text    xpath=//*[@id="userName"]    ${client-username}
+    Element Click    xpath: //*[contains(text(), "Pokračovat")]     SeleniumLibrary
+    
 Založení nového klienta (KB ADMIN)
-        Otevři KB Admin    ${browser}
+        Otevři KB Admin    
         SeleniumLibrary.Wait Until Element Is Visible    id:query    7 seconds
         SeleniumLibrary.Input Text    id:query    .
         SeleniumLibrary.Click Button     class:btn.btn-primary.btn-icon
@@ -200,12 +251,32 @@ Založení nového klienta (KB ADMIN)
 
         SeleniumLibrary.Click Element    name:bu9702
         Close All Browsers
-Aktivace BH(KB ADMIN)
-        Aktivuj KB Klíč
-        Otevři KB Admin    ${browser}
-        Vyhledej Účet    ${client-ID}
-        Otestuj Akci     Bezpečnostní heslo  
+Open Chrome With Disabled Search Engine Choice Screen
+    [Arguments]    ${url}
+    ${options}=    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
+    Call Method    ${options}    add_argument    --disable-search-engine-choice-screen    
+    Create WebDriver    Chrome    options=${options}
+    Go To    ${url}
+Open Chrome With Disabled Search Engine Choice Screen - incognito
+    [Arguments]    ${url}
+    # Create an instance of ChromeOptions
+    ${options}=    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
+    Call Method    ${options}    add_argument    --disable-search-engine-choice-screen
+    Call Method    ${options}    add_argument    --incognito
+    # Create the WebDriver with the specified options
+    Create WebDriver    Chrome    options=${options}
+    Go To    ${url}
+Handshake 
+    SeleniumLibrary.Wait Until Element Is Visible    xpath=//*[@id="details-button"]
+    SeleniumLibrary.Click Element    xpath=//*[@id="details-button"]
+    SeleniumLibrary.Wait Until Element Is Visible    xpath=//*[@id="proceed-link"]
+    SeleniumLibrary.Click Element    xpath=//*[@id="proceed-link"]
+    SeleniumLibrary.Wait Until Element Is Visible    xpath=//*[@id="details-button"]
+    SeleniumLibrary.Click Element    xpath=//*[@id="details-button"]
+    SeleniumLibrary.Wait Until Element Is Visible    xpath=//*[@id="proceed-link"]
+    SeleniumLibrary.Click Element    xpath=//*[@id="proceed-link"]
 
+*** Test Cases ***
 Sjednání Smlouvy
     Sjednej Smlouvu
     #TO DO: ZJISTIT, JESTLI JE VYGENEROVANÝ STRING SKUTEČNĚ ORIGINÁLNÍ - done
@@ -217,7 +288,7 @@ Deaktivace KB Klíče (KB ADMIN)
     Deaktivuj KB Klíč
 Blokace KB Klíče (KB ADMIN)
     Aktivuj KB Klíč
-    Otevři KB Admin    ${browser}
+    Otevři KB Admin    
     Vyhledej Účet    ${client-ID}
     Otestuj Akci    Blokovat metodu
     #BUG: [FAIL INSIDE] Multiple keywords with name 'Capture Page Screenshot' found.
@@ -225,10 +296,14 @@ Blokace KB Klíče (KB ADMIN)
 Blokace zařízení (KB ADMIN)
     Deaktivuj KB Klíč
     Aktivuj KB Klíč
-    Otevři KB Admin    ${browser}
+    Otevři KB Admin    
     Vyhledej Účet    ${client-ID}
     Otestuj Akci    Blokovat
 Odebrání zařízení (KB ADMIN)
-    Otevři KB Admin    ${browser}
+    Otevři KB Admin    
     Vyhledej Účet    ${client-ID}
+Aktivace BH (ADMIN) - bez kbk
+    Založení nového klienta (KB ADMIN)
+    Sjednej Smlouvu
+    Aktivuj BH - ADMIN    ${client-ID}
        
