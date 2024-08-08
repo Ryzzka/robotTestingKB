@@ -159,14 +159,13 @@ Aktivuj BH - ADMIN
     Sleep    1 seconds
     SeleniumLibrary.Wait Until Element Is Visible    xpath=//*[@id="name"]
     SeleniumLibrary.Input Text    xpath=//*[@id="name"]    ${client-ID}
-    SeleniumLibrary.Wait Until Element Is Visible    xpath=//*[contains(text(), "Pokračovat")] 
-    SeleniumLibrary.Click Element    xpath=//*[contains(text(), "Pokračovat")]
+    Element Click    xpath=//*[contains(text(), "Pokračovat")]    SeleniumLibrary
     SeleniumLibrary.Wait Until Element Is Visible    xpath=//*[@id="otp"]
     SeleniumLibrary.Input Text    xpath=//*[@id="otp"]    ${unique-code}
-    SeleniumLibrary.Wait Until Element Is Visible    xpath=//*[contains(text(), "Potvrdit")]
-    SeleniumLibrary.Click Element    xpath=//*[contains(text(), "Potvrdit")]
+    Element Click    xpath=//*[contains(text(), "Potvrdit")]    SeleniumLibrary
     Unselect Frame
     Execute JavaScript    window.open('https://dev1-caas.kb.cz/otptestaccess', '_blank');
+    Maximize Browser Window
     Switch Window    url=https://dev1-caas.kb.cz/otptestaccess
     SeleniumLibrary.Click Element    id:details-button
     SeleniumLibrary.Click Element    id:proceed-link
@@ -177,16 +176,16 @@ Aktivuj BH - ADMIN
     ${OTP2}=      SeleniumLibrary.Get Text    xpath=/html/body/caas-test-otp-access-app/div/sa-otp-detail/div[2]/div[6]/div/p
     ${OTP2}=    Set Variable    ${OTP2}[0:6]
     Switch Window    url=https://dev1-mujprofil.kb.cz/self-service/login
-    Select Frame    id=login
+    SeleniumLibrary.Wait Until Element Is Visible  //iframe[@id='login']  timeout=10s
     Sleep    500 milliseconds
+    Select Frame    id=login
     SeleniumLibrary.Input Text    id:otp    ${OTP2}
-    SeleniumLibrary.Click Element    xpath: //*[contains(text(), "Potvrdit")]
-    Unselect Frame
-    ${client-username}    Generate random string    7    ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
-    Sleep    1000 seconds
-    SeleniumLibrary.Wait Until Element Is Visible    xpath=//*[@id="userName"]
-    SeleniumLibrary.Input Text    xpath=//*[@id="userName"]    ${client-username}
-    Element Click    xpath: //*[contains(text(), "Pokračovat")]     SeleniumLibrary
+    Element Click    xpath: //*[contains(text(), "Potvrdit")]    SeleniumLibrary   
+    Sleep    20s
+    ${client-username}    Generate random string    7    ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz  
+    SeleniumLibrary.Wait Until Element Is Visible    xpath=/html/body/app-root/app-self-service/div/app-finish-activation-wizard/app-wizard/app-stepper/div/div/ul[2]/li[1]/div[2]/div[1]/app-wizard-step[1]/app-user-name-form/form/div/div[3]/div[2]/div[2]/div/app-form-renderer/div[1]/span/app-text-input-form-element/div[1]/div/div/input
+    SeleniumLibrary.Input Text    xpath=/html/body/app-root/app-self-service/div/app-finish-activation-wizard/app-wizard/app-stepper/div/div/ul[2]/li[1]/div[2]/div[1]/app-wizard-step[1]/app-user-name-form/form/div/div[3]/div[2]/div[2]/div/app-form-renderer/div[1]/span/app-text-input-form-element/div[1]/div/div/input   ${client-username}
+    Element Click    xpath= //*[contains(text(), "Pokračovat")]   SeleniumLibrary
     
 Založení nového klienta (KB ADMIN)
         Otevři KB Admin    
