@@ -40,6 +40,7 @@ pip install robotframework-appiumlibrary
 npm install appium-doctor -g
 npm install -g appium
 pip install selenium
+appium driver install uiautomator2
 ```
 
 3)	Pomocí Windows Search vyhledáme **Upravit proměnné prostředí systému** a klikneme na první výsledek
@@ -51,7 +52,8 @@ Hodnota: **C:\Users\VAŠEJMÉNO\AppData\Local\Android\Sdk**
 
 Název: **JAVA_HOME** <br />
 Hodnota: **C:\Program Files\Java\jre1.8.0_421** <br />
-*Poznámka: Verze Javy se může lišit*
+> [!NOTE]
+> Verze Javy se může lišit
 
 6)	Otevřeme si složku **Path** a klikneme na **Nový**
 7)	Sem přidáme následujících pět položek:
@@ -65,7 +67,8 @@ C:\Program Files\nodejs\
 8)	Založíme si složku na projekty. Na jménu či umístění nezáleží.
 9)	Otevřeme Visual Studio Code, klikneme na **File > Open File > JMÉNOSLOŽKY**
 10)	Klikneme na **File > New File > NÁZEV.robot** <br />
-	*Poznámka: Na názvu opět nezáleží. Důležitá je přípona .robot*
+> [!NOTE]
+> Na názvu opět nezáleží. Důležitá je přípona .robot
 
 ## WEB DRIVERS
 ### Chrome
@@ -77,18 +80,20 @@ C:\Program Files\nodejs\
 ## ANDROID STUDIO
 1)	Stáhneme a nainstalujeme si **[Android Studio](https://developer.android.com/studio)**
 2)	Založíme si nový prázdný projekt
-3)	Vpravo klikneme na **Device Manager** a zde klikneme na ikonu + **(Add a new device)**. Zde si vybereme libovolný model telefonu	
-4)	Spustíme emulátor a přihlásíme se do něj Google účtem
-5)	Otevřeme obchod play a z něj si stáhneme aplikaci s názvem **APK Info**
-6)	Taktéž si do emulátoru přesuneme aplikaci **KB Klíč (DEV1)**. Poté můžeme emulátor vypnout
-7)	Nakonec restartujeme počítač pro aplikování všech změn
+3)	Vpravo nahoře klikneme na ozubené kolečko a zvolíme **SDK Manager**
+4)	Nahoře uprostřed klikneme na **SDK Tools** a dole vypneme možnost **Hide Obsolete**
+5)	Najdeme si balíček **Android SDK Tools (Obsolete)** a stáhneme ho
+6)	Po stažení klikneme na **Apply** a okno zavřeme
+7)	Vpravo klikneme na **Device Manager** a zde klikneme na ikonu + **(Add a new device)**. Zde si vybereme libovolný model telefonu	
+8)	Spustíme emulátor a přihlásíme se do něj Google účtem
+9)	Otevřeme obchod play a z něj si stáhneme aplikaci s názvem **APK Info**
+10)	Taktéž si do emulátoru přesuneme aplikaci **KB Klíč (DEV1)**. Poté můžeme emulátor vypnout
+11)	Nakonec restartujeme počítač pro aplikování všech změn
 
 ## ČASTÉ PROBLÉMY
 ### Android Studio
 1)	Při pokusu o přihlášení do aplikace KB Klíč se zobrazí hláška **Nemáte povolený tester**
 -	V emulátoru otevřeme **[následující stránku](https://www.mobilnibanka.cz/tester/)**, kam se přihlásíme
 - Následně restartujeme emulátor: **Device Manager > Tři tečky vedle modelu telefonu > Cold Boot**
-
-2)	Capture Screenshot Error
 
 
