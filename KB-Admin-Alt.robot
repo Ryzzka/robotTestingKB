@@ -185,8 +185,9 @@ Aktivuj BH - ADMIN
     ${client-username}    Generate random string    7    ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz  
     SeleniumLibrary.Wait Until Element Is Visible    xpath=/html/body/app-root/app-self-service/div/app-finish-activation-wizard/app-wizard/app-stepper/div/div/ul[2]/li[1]/div[2]/div[1]/app-wizard-step[1]/app-user-name-form/form/div/div[3]/div[2]/div[2]/div/app-form-renderer/div[1]/span/app-text-input-form-element/div[1]/div/div/input
     SeleniumLibrary.Input Text    xpath=/html/body/app-root/app-self-service/div/app-finish-activation-wizard/app-wizard/app-stepper/div/div/ul[2]/li[1]/div[2]/div[1]/app-wizard-step[1]/app-user-name-form/form/div/div[3]/div[2]/div[2]/div/app-form-renderer/div[1]/span/app-text-input-form-element/div[1]/div/div/input   ${client-username}
-    Element Click    xpath= //*[contains(text(), "Pokračovat")]   SeleniumLibrary
-    
+    Element Click    xpath: //*[contains(text(), "POKRAČOVAT")]      SeleniumLibrary
+    Sleep    10000s
+
 Založení nového klienta (KB ADMIN)
         Otevři KB Admin    
         SeleniumLibrary.Wait Until Element Is Visible    id:query    7 seconds
