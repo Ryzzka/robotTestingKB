@@ -5,10 +5,13 @@ Library    SeleniumLibrary
 
 *** Variables ***
 ${client-ID}
+${client-password}
 
 ${username}    DSLAB\\e_mvysko
 ${password}    Pr0ject_NemlaZ_0002
 ${browser}    chrome
+
+${SPECIAL_CHARS}    !@#$%^&
 *** Keywords ***
 Otevři KB Admin
     Open Chrome With Disabled Search Engine Choice Screen   https://dev1-caas.kb.cz/    
@@ -124,6 +127,12 @@ Element Click
     ...    ELSE IF    '${library}' == 'AppiumLibrary'    AppiumLibrary.Wait Until Element Is Visible    ${locator}    10 seconds
     Run Keyword If    '${library}' == 'SeleniumLibrary'    SeleniumLibrary.Click Element    ${locator}
     ...    ELSE IF    '${library}' == 'AppiumLibrary'    AppiumLibrary.Click Element    ${locator}
+Element Input
+    [Arguments]    ${locator}    ${library}    ${text}
+    Run Keyword If    '${library}' == 'SeleniumLibrary'    SeleniumLibrary.Wait Until Element Is Visible    ${locator}    10 seconds
+    ...    ELSE IF    '${library}' == 'AppiumLibrary'    AppiumLibrary.Wait Until Element Is Visible    ${locator}    10 seconds
+    Run Keyword If    '${library}' == 'SeleniumLibrary'    SeleniumLibrary.Input Text   ${locator}    ${text}
+    ...    ELSE IF    '${library}' == 'AppiumLibrary'    AppiumLibrary.Input Text    ${locator}    ${text}    
 Otestuj Akci
     [Arguments]    ${název-akce}
     SeleniumLibrary.Wait Until Element Is Visible    class:kb-linkbox__inner    7 seconds
@@ -183,11 +192,15 @@ Aktivuj BH - ADMIN
     Element Click    xpath: //*[contains(text(), "Potvrdit")]    SeleniumLibrary   
     Sleep    20s
     ${client-username}    Generate random string    7    ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz  
-    SeleniumLibrary.Wait Until Element Is Visible    xpath=/html/body/app-root/app-self-service/div/app-finish-activation-wizard/app-wizard/app-stepper/div/div/ul[2]/li[1]/div[2]/div[1]/app-wizard-step[1]/app-user-name-form/form/div/div[3]/div[2]/div[2]/div/app-form-renderer/div[1]/span/app-text-input-form-element/div[1]/div/div/input
-    SeleniumLibrary.Input Text    xpath=/html/body/app-root/app-self-service/div/app-finish-activation-wizard/app-wizard/app-stepper/div/div/ul[2]/li[1]/div[2]/div[1]/app-wizard-step[1]/app-user-name-form/form/div/div[3]/div[2]/div[2]/div/app-form-renderer/div[1]/span/app-text-input-form-element/div[1]/div/div/input   ${client-username}
-    Element Click    xpath: //*[contains(text(), "POKRAČOVAT")]      SeleniumLibrary
-    Sleep    10000s
-
+    Element Input    xpath=/html/body/app-root/app-self-service/div/app-finish-activation-wizard/app-wizard/app-stepper/div/div/ul[2]/li[1]/div[2]/div[1]/app-wizard-step[1]/app-user-name-form/form/div/div[3]/div[2]/div[2]/div/app-form-renderer/div[1]/span/app-text-input-form-element/div[1]/div/div/input     SeleniumLibrary    ${client-username}
+    Sleep    2s
+    Element Click    xpath=//button[contains(@class, 'btn btn-primary') and @type='submit' and contains(text(), 'Pokračovat')]    SeleniumLibrary
+    ${client-password}    Generate random string    20    ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*!@123456789    
+    Sleep    2s     
+    Element Input    xpath=//input[@type='password' and @id='newPassword' and @placeholder='Nové heslo']     SeleniumLibrary    ${client-password}
+    Element Input    xpath=//input[@type='password' and @id='passwordConfirm' and @name='passwordConfirm' and @placeholder='Potvrzení hesla']    SeleniumLibrary    ${client-password}
+    Element Click    xpath=//button[contains(@class, 'btn btn-primary') and @type='submit' and contains(text(), 'Pokračovat')]    SeleniumLibrary
+    Close All Browsers
 Založení nového klienta (KB ADMIN)
         Otevři KB Admin    
         SeleniumLibrary.Wait Until Element Is Visible    id:query    7 seconds
@@ -266,16 +279,11 @@ Open Chrome With Disabled Search Engine Choice Screen - incognito
     # Create the WebDriver with the specified options
     Create WebDriver    Chrome    options=${options}
     Go To    ${url}
-Handshake 
-    SeleniumLibrary.Wait Until Element Is Visible    xpath=//*[@id="details-button"]
-    SeleniumLibrary.Click Element    xpath=//*[@id="details-button"]
-    SeleniumLibrary.Wait Until Element Is Visible    xpath=//*[@id="proceed-link"]
-    SeleniumLibrary.Click Element    xpath=//*[@id="proceed-link"]
-    SeleniumLibrary.Wait Until Element Is Visible    xpath=//*[@id="details-button"]
-    SeleniumLibrary.Click Element    xpath=//*[@id="details-button"]
-    SeleniumLibrary.Wait Until Element Is Visible    xpath=//*[@id="proceed-link"]
-    SeleniumLibrary.Click Element    xpath=//*[@id="proceed-link"]
-
+Handshake
+    Element Click    xpath=//*[@id="details-button"]    SeleniumLibrary
+    Element Click    xpath=//*[@id="proceed-link"]    SeleniumLibrary
+    Element Click    xpath=//*[@id="details-button"]    SeleniumLibrary
+    Element Click    xpath=//*[@id="proceed-link"]    SeleniumLibrary
 *** Test Cases ***
 Sjednání Smlouvy
     Sjednej Smlouvu
