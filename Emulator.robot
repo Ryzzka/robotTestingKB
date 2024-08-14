@@ -12,11 +12,10 @@ ${login} =    DSLAB\\e_mvysko
 ${heslo} =    Pr0ject_NemlaZ_0002
 ${FILE_PATH}      C:/Users/vasek/Documents/Robot/qr_code.png
 ${DESTINATION_PATH}    /sdcard/Download/qr_code.png
-${ID}=    9851826433
-${username}    ZitbBVV
-${telcislo}    608 399 948
+${ID}=    9418637443
+${username}    bPhyjhT
+${telcislo}    608 850 839
 *** Keywords ***
-
 Element Click
     [Arguments]    ${locator}    ${library}
     Run Keyword If    '${library}' == 'SeleniumLibrary'    SeleniumLibrary.Wait Until Element Is Visible    ${locator}    10 seconds
@@ -81,7 +80,6 @@ Otestuj Akci
     SeleniumLibrary.Click Element    name:bu10453
 
 *** Test Cases ***
-
 založení nového klienta (KB ADMIN)
         Generator ID a tel. cisla a jmena
         Otevři KB Admin    ${login}    ${heslo}
