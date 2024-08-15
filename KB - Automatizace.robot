@@ -334,11 +334,25 @@ Aktivace KB Klíče a sjednání smlouvy (KB ADMIN)
     Aktivuj KB Klíč a Sjednej Smlouvu
 Aktivace KB klíče pomocí QR kódu (KB ADMIN)
     AppiumLibrary.Open Application    http://localhost:4723   platformName=Android    deviceName=emulator-5554    appPackage=cz.kb.paat.kbdev1    appActivity=cz.kb.paat.ui.MainActivity    automationName=UiAutomator2
-    AppiumLibrary.Click Element    id=cz.kb.paat.kbdev1:id/button_next
-    AppiumLibrary.Click Element    id=cz.kb.paat.kbdev1:id/button_next
-    AppiumLibrary.Wait Until Element Is Visible    id=cz.kb.paat.kbdev1:id/button_manually    20 seconds
+    Run keyword and Ignore Error    AppiumLibrary.Click Element    id=cz.kb.paat.kbdev1:id/button_next
+    Run keyword and Ignore Error    AppiumLibrary.Click Element    id=cz.kb.paat.kbdev1:id/button_next
+    AppiumLibrary.Wait Until Page Contains Element    id=cz.kb.paat.kbdev1:id/button_manually
     AppiumLibrary.Click Element    id=cz.kb.paat.kbdev1:id/button_manually
-    Otevři KB Admin
+    Open Chrome With Disable Search Engine Choice Screen    https://dev1-caas.kb.cz/
+    SeleniumLibrary.Maximize Browser Window
+    SeleniumLibrary.Click Element    id:details-button
+    SeleniumLibrary.Click Element    id:proceed-link
+    SeleniumLibrary.Wait Until Element Is Visible    id:details-button    20 seconds
+    SeleniumLibrary.Click Element    id:details-button
+    SeleniumLibrary.Click Element    id:proceed-link
+    SeleniumLibrary.Wait Until Element Is Visible    id:details-button    20 seconds
+    SeleniumLibrary.Click Element    id:details-button
+    SeleniumLibrary.Click Element    id:proceed-link
+    SeleniumLibrary.Wait Until Element Is Visible    id:userNameInput    20 seconds
+    SeleniumLibrary.Input Text    id:userNameInput    DSLAB\\e_mvysko
+    SeleniumLibrary.Click Element    id:nextButton
+    SeleniumLibrary.Input Text    id:passwordInput    Pr0ject_NemlaZ_0002
+    SeleniumLibrary.Click Element    id:submitButton
     SeleniumLibrary.Wait Until Element Is Visible    id:query    20 seconds
     SeleniumLibrary.Input Text    id:query   ${client-ID}
     SeleniumLibrary.Click Button     class:btn.btn-primary.btn-icon
@@ -351,6 +365,7 @@ Aktivace KB klíče pomocí QR kódu (KB ADMIN)
     SeleniumLibrary.Wait Until Element Is Visible    xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]    20 seconds
     SeleniumLibrary.Click Element    xpath: //*[contains(text(), "Dokument byl podepsán klientem.")]
     SeleniumLibrary.Click Element    class:btn.btn-primary
+    
     SeleniumLibrary.Wait Until Element Is Visible    xpath: //img[@title='Jednorázový kód']    20 seconds
     SeleniumLibrary.Scroll Element Into View    xpath: //*[contains(text(), "Po úspěšném načtení aktivačních údajů")]
     SeleniumLibrary.Capture Element Screenshot    xpath: //img[@title='Jednorázový kód']    qr_code.png
@@ -400,7 +415,7 @@ Přihlášení do Můj Profil
     SeleniumLibrary.Press Keys    id=name    ${client-username}
     SeleniumLibrary.Click Element    xpath: //*[contains(text(), "Pokračovat")]
     SeleniumLibrary.Wait Until Element Is Visible    id:phoneNumber   20 seconds
-    SeleniumLibrary.Input Text    id:phoneNumber    ${client-phone-number}
+    SeleniumLibrary.Input Text    id:phoneNumber    608${client-phone-number}
     SeleniumLibrary.Click Element    xpath: //*[contains(text(), "Pokračovat")]
     Run keyword and Ignore Error    SeleniumLibrary.Wait Until Element Is Visible    xpath: //*[contains(text(), "Přihlásit se jiným způsobem")]    20 seconds
     Run keyword and Ignore Error    SeleniumLibrary.Click Element    xpath: //*[contains(text(), "Přihlásit se jiným způsobem")]    20 seconds
