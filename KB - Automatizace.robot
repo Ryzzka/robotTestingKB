@@ -8,7 +8,7 @@ Library    String
 
 *** Variables ***
 ${username}    DSLAB\\e_mvysko
-${password}    Pr0ject_NemlaZ_0002
+${password}    Pr0ject_NemlaZ_0003
 
 ${FILE_PATH}      C:/Users/adam/Documents/Robot-Framework/robotTestingKB/qr_code.png
 ${DESTINATION_PATH}    /sdcard/Download/qr_code.png
@@ -142,9 +142,9 @@ Aktivuj KB Klíč
     SeleniumLibrary.Click Element    id:details-button
     SeleniumLibrary.Click Element    id:proceed-link
     SeleniumLibrary.Wait Until Element Is Visible    id:userNameInput    20 seconds
-    SeleniumLibrary.Input Text    id:userNameInput    DSLAB\\e_mvysko
+    SeleniumLibrary.Input Text    id:userNameInput    ${username}
     SeleniumLibrary.Click Element    id:nextButton
-    SeleniumLibrary.Input Text    id:passwordInput    Pr0ject_NemlaZ_0002
+    SeleniumLibrary.Input Text    id:passwordInput    ${password}
     SeleniumLibrary.Click Element    id:submitButton
     SeleniumLibrary.Wait Until Element Is Visible    id:query    20 seconds
     SeleniumLibrary.Input Text    id:query   ${client-ID}
@@ -213,9 +213,9 @@ Aktivuj KB Klíč a Sjednej Smlouvu
     SeleniumLibrary.Click Element    id:details-button
     SeleniumLibrary.Click Element    id:proceed-link
     SeleniumLibrary.Wait Until Element Is Visible    id:userNameInput    20 seconds
-    SeleniumLibrary.Input Text    id:userNameInput    DSLAB\\e_mvysko
+    SeleniumLibrary.Input Text    id:userNameInput    ${username}
     SeleniumLibrary.Click Element    id:nextButton
-    SeleniumLibrary.Input Text    id:passwordInput    Pr0ject_NemlaZ_0002
+    SeleniumLibrary.Input Text    id:passwordInput    ${password}
     SeleniumLibrary.Click Element    id:submitButton
     SeleniumLibrary.Wait Until Element Is Visible    id:query    20 seconds
     SeleniumLibrary.Input Text    id:query   ${client-ID}
@@ -299,10 +299,8 @@ Zruš Smlouvu
 *** Test Cases ***
 Založení nového klienta (KB ADMIN)
     Založ Nového Klienta
-    #TO DO: ZJISTIT, JESTLI JE VYGENEROVANÝ STRING SKUTEČNĚ ORIGINÁLNÍ [?]
 Sjednání Smlouvy (KB ADMIN)
     Sjednej Smlouvu
-    #TO DO: ZJISTIT, JESTLI JE VYGENEROVANÝ STRING SKUTEČNĚ ORIGINÁLNÍ [?]
 Aktivace KB Klíče (KB ADMIN)
     Aktivuj KB Klíč
     #BUG: PŘI DEAKTIVACI KB KLÍČE TRVÁ DLOUHO, NEŽ SE ZAŠKRTNE POLÍČKO "Dokument byl podepsán klientem. TAKTÉŽ SE VYTVOŘÍ SCREENSHOT."
@@ -349,9 +347,9 @@ Aktivace KB klíče pomocí QR kódu (KB ADMIN)
     SeleniumLibrary.Click Element    id:details-button
     SeleniumLibrary.Click Element    id:proceed-link
     SeleniumLibrary.Wait Until Element Is Visible    id:userNameInput    20 seconds
-    SeleniumLibrary.Input Text    id:userNameInput    DSLAB\\e_mvysko
+    SeleniumLibrary.Input Text    id:userNameInput    ${username}
     SeleniumLibrary.Click Element    id:nextButton
-    SeleniumLibrary.Input Text    id:passwordInput    Pr0ject_NemlaZ_0002
+    SeleniumLibrary.Input Text    id:passwordInput    ${password}
     SeleniumLibrary.Click Element    id:submitButton
     SeleniumLibrary.Wait Until Element Is Visible    id:query    20 seconds
     SeleniumLibrary.Input Text    id:query   ${client-ID}
