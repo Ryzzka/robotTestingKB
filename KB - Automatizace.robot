@@ -303,11 +303,9 @@ Sjednání Smlouvy (KB ADMIN)
     Sjednej Smlouvu
 Aktivace KB Klíče (KB ADMIN)
     Aktivuj KB Klíč
-    #BUG: PŘI DEAKTIVACI KB KLÍČE TRVÁ DLOUHO, NEŽ SE ZAŠKRTNE POLÍČKO "Dokument byl podepsán klientem. TAKTÉŽ SE VYTVOŘÍ SCREENSHOT."
-    #TO DO: PŘIDAT "Wait Until Element Is Visible" PRO BUTTON "Close" NA STRÁNCE "Activation Completed Succesfuly".
-    #TO DO: NAHRADIT OPAKUJÍCÍ SE KÓD KEYWORDY ("Otevři KB Admin", "Vyhledej Účet")
 Deaktivace KB Klíče (KB ADMIN)
     Deaktivuj KB Klíč
+    #BUG: TRVÁ DLOUHO, NEŽ SE ZAŠKRTNE POLÍČKO "Dokument byl podepsán klientem. TAKTÉŽ SE VYTVOŘÍ SCREENSHOT."
 Blokace KB Klíče (KB ADMIN)
     Aktivuj KB Klíč
     Otevři KB Admin
@@ -331,6 +329,7 @@ Aktivace KB Klíče a sjednání smlouvy (KB ADMIN)
     Založ Nového Klienta
     Aktivuj KB Klíč a Sjednej Smlouvu
 Aktivace KB klíče pomocí QR kódu (KB ADMIN)
+    Deaktivuj KB Klíč
     AppiumLibrary.Open Application    http://localhost:4723   platformName=Android    deviceName=emulator-5554    appPackage=cz.kb.paat.kbdev1    appActivity=cz.kb.paat.ui.MainActivity    automationName=UiAutomator2
     Run keyword and Ignore Error    AppiumLibrary.Click Element    id=cz.kb.paat.kbdev1:id/button_next
     Run keyword and Ignore Error    AppiumLibrary.Click Element    id=cz.kb.paat.kbdev1:id/button_next
@@ -388,7 +387,7 @@ Aktivace KB klíče pomocí QR kódu (KB ADMIN)
     AppiumLibrary.Input Text    id=cz.kb.paat.kbdev1:id/edt_verification_code    ${OTP2}
     Hide Keyboard
     AppiumLibrary.Click Element    id=cz.kb.paat.kbdev1:id/button_next
-    AppiumLibrary.Wait Until Element Is Visible    id=cz.kb.paat.kbdev1:id/edt_new_password
+    AppiumLibrary.Wait Until Element Is Visible    id=cz.kb.paat.kbdev1:id/edt_new_password    20 seconds
     AppiumLibrary.Input Text    id=cz.kb.paat.kbdev1:id/edt_new_password    147321
     AppiumLibrary.Input Text    id=cz.kb.paat.kbdev1:id/edt_new_password2    147321
     Hide Keyboard
@@ -398,7 +397,7 @@ Aktivace KB klíče pomocí QR kódu (KB ADMIN)
     Run Process    adb shell rm ${DESTINATION_PATH}    shell=True
     Sleep    5 seconds
     AppiumLibrary.Close Application
-Přihlášení do Můj Profil
+Přihlášení do Můj Profil (MŮJ PROFIL)
     Open Chrome With Disable Search Engine Choice Screen    https://dev1-login.kb.cz/
     Maximize Browser Window
     SeleniumLibrary.Click Element    id:details-button
@@ -408,15 +407,15 @@ Přihlášení do Můj Profil
     SeleniumLibrary.Click Element    id:proceed-link
     SeleniumLibrary.Wait Until Element Is Visible    id=login    20 seconds
     Select Frame    id=login
-    Sleep    1 second
+    Sleep    2 seconds
     SeleniumLibrary.Wait Until Element Is Visible   id=name    20 seconds
     SeleniumLibrary.Press Keys    id=name    ${client-username}
     SeleniumLibrary.Click Element    xpath: //*[contains(text(), "Pokračovat")]
-    SeleniumLibrary.Wait Until Element Is Visible    id:phoneNumber   20 seconds
-    SeleniumLibrary.Input Text    id:phoneNumber    608${client-phone-number}
+    Run keyword and Ignore Error    SeleniumLibrary.Wait Until Element Is Visible    id:phoneNumber   20 seconds
+    Run keyword and Ignore Error    SeleniumLibrary.Input Text    id:phoneNumber    608${client-phone-number}
     SeleniumLibrary.Click Element    xpath: //*[contains(text(), "Pokračovat")]
-    Run keyword and Ignore Error    SeleniumLibrary.Wait Until Element Is Visible    xpath: //*[contains(text(), "Přihlásit se jiným způsobem")]    20 seconds
-    Run keyword and Ignore Error    SeleniumLibrary.Click Element    xpath: //*[contains(text(), "Přihlásit se jiným způsobem")]    20 seconds
+    SeleniumLibrary.Wait Until Element Is Visible    xpath: //*[contains(text(), "Přihlásit se jiným způsobem")]    20 seconds   20 seconds
+    SeleniumLibrary.Click Element    xpath: //*[contains(text(), "Přihlásit se jiným způsobem")]    20 seconds
     Unselect Frame
     Execute JavaScript    window.open('https://dev1-caas.kb.cz/otptestaccess', '_blank');
     Switch Window    url=https://dev1-caas.kb.cz/otptestaccess
@@ -431,7 +430,7 @@ Přihlášení do Můj Profil
     ${OTP2}=    Set Variable    ${OTP2}[0:6]
     Switch Window    url=https://dev1-mujprofil.kb.cz/self-service/login
     Select Frame    id=login
-    Sleep    500 milliseconds
+    Sleep    1 second
     SeleniumLibrary.Input Text    id:otp    ${OTP2}
     SeleniumLibrary.Click Element    xpath: //*[contains(text(), "Potvrdit")]
     Unselect Frame

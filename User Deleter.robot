@@ -4,7 +4,7 @@ Library    String
 
 *** Variables ***
 ${username}    DSLAB\\e_mvysko
-${password}    Pr0ject_NemlaZ_0002
+${password}    Pr0ject_NemlaZ_0003
 
 *** Keywords ***
 Open Chrome With Disable Search Engine Choice Screen

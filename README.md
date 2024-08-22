@@ -70,7 +70,7 @@ C:\Program Files\nodejs\
 > [!NOTE]
 > Je třeba průběžně sledovat aktualizace.
 
-ANDROID STUDIO
+# ANDROID STUDIO
 1)	Stáhneme a nainstalujeme si **[Android Studio](https://developer.android.com/studio)**
 2)	Založíme si nový prázdný projekt
 3)	Vpravo nahoře klikneme na ozubené kolečko a zvolíme **„SDK Manager“**
@@ -85,7 +85,7 @@ ANDROID STUDIO
 
 # SPUŠTĚNÍ
 
-JAK ZAHÁJIT TESTOVÁNÍ 
+## JAK ZAHÁJIT TESTOVÁNÍ 
 1)	Ve **Visual Studio Code** zvolíme **„Clone Repository“** a do kolonky vložíme tento odkaz:
 ```
 https://github.com/Ryzzka/robotTestingKB.git
@@ -107,3 +107,7 @@ appium
 1)	Při pokusu o přihlášení do aplikace KB Klíč se zobrazí hláška **„Nemáte povolený tester“**
 -	V emulátoru otevřeme **[následující stránku](https://www.mobilnibanka.cz/tester/)**, kam se přihlásíme
 -	**Device Manager > Tři tečky vedle modelu telefonu > Cold Boot**
+2)	Chyba na řádku **129**
+-	Není spuštěné **Android Studio/Appium Server**
+3)	Chyba na řádku **178**
+-	**[Webová stránka](https://dev1-caas.kb.cz/otptestaccess)** neodpovídá

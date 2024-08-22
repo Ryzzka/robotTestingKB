@@ -7,7 +7,7 @@ Library    SeleniumLibrary
 ${client-ID}
 
 ${username}    DSLAB\\e_mvysko
-${password}    Pr0ject_NemlaZ_0002
+${password}    Pr0ject_NemlaZ_0003
 ${browser}    chrome
 
 *** Keywords ***
